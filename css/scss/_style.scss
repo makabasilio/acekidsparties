@@ -1,16 +1,15 @@
 /*
 	
-	SASS
-	Theme Name: HTML5 Blank
+	
+	Theme Name: Ace Kids Parties theme
 	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
+	Description: Ace Kids Parties theme
 	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
+	Author: Maka Basilio (@makabasilio)
+	Author URI: http://acekidsparties.com.au
 	Tags: Blank, HTML5, CSS3
 
-	License: MIT
-	License URI: http://opensource.org/licenses/mit-license.php
+	
 */
 
 
@@ -18,15 +17,11 @@
     RESET
 \*------------------------------------*/
 
-html, body {
+html, body, section, header, footer, div, nav, article, a, ul, li, ol, quote, img {
 	display: block;
 	margin: 0;
 	padding: 0;
 }
-
-/*------------------------------------*\
-    MAIN
-\*------------------------------------*/
 
 /* global box-sizing */
 *,
@@ -86,15 +81,7 @@ input:focus {
     STRUCTURE
 \*------------------------------------*/
 
-/* wrapper */
-.wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
-	border: 2px solid black;
-	
-}
+
 
 
 /* header */
@@ -108,176 +95,27 @@ input:focus {
 	background-color: $bluesky ;
 	border-bottom: 3px solid $white;
 
-	.nav {
-		width: 760px;
-    	margin-top:38px;
-
-	    	
-
-	 
-
-    }	
-
-    .nav-tabs {
-    border-bottom: none;
-
-    		.nav-link {
-    		margin-right: 20px;
-    		}
-
-
-			> a {
-	    	font-family: "acmesa";
-	    	font-size: 1.3em;
-	    	color: $black;
-	      	float: none;
-	      	padding-top: 12px;
-    		padding-bottom: 15px;
-
-
-
-
-	      		
-	      		
-	    	}
-
-	    	 > a:hover {
-	      		background-color: $white;
-	      		color: $eggyolk;
-	      		border-bottom: none;
-	      		border-radius: 5px 5px 0px 0px;
-	      		}
-
-	 }
-
-} // header ends
-
-
-/* logo */
-.logo {
-
-}
-.logo-img {
-
-}
-/* nav */
-.nav {
-
-}
-/* sidebar */
-.sidebar {
-
-}
-/* footer */
-.footer {
-
 }
 
-/*------------------------------------*\
-    PAGES
-\*------------------------------------*/
-
+section {
+	width:100%;
+	height:500px;
+	border:2px solid $black;
+}	
 
 
 /*------------------------------------*\
-    IMAGES
+    FOOTER
 \*------------------------------------*/
 
 
-
-
-
-/*------------------------------------*\
-    MISC
-\*------------------------------------*/
-
-::selection {
-	background:#04A4CC;
-	color:#FFF;
-	text-shadow:none;
-}
-::-webkit-selection {
-	background:#04A4CC;
-	color:#FFF;
-	text-shadow:none;
-}
-::-moz-selection {
-	background:#04A4CC;
-	color:#FFF;
-	text-shadow:none;
-}
-
-/*------------------------------------*\
-    WORDPRESS CORE
-\*------------------------------------*/
-
-.alignnone {
-	margin:5px 20px 20px 0;
-}
-.aligncenter,
-div.aligncenter {
-	display:block;
-	margin:5px auto 5px auto;
-}
-.alignright {
-	float:right;
-	margin:5px 0 20px 20px;
-}
-.alignleft {
-	float:left;
-	margin:5px 20px 20px 0;
-}
-a img.alignright {
-	float:right;
-	margin:5px 0 20px 20px;
-}
-a img.alignnone {
-	margin:5px 20px 20px 0;
-}
-a img.alignleft {
-	float:left;
-	margin:5px 20px 20px 0;
-}
-a img.aligncenter {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-}
-.wp-caption {
-	background:#FFF;
-	border:1px solid #F0F0F0;
-	max-width:96%;
-	padding:5px 3px 10px;
-	text-align:center;
-}
-.wp-caption.alignnone {
-	margin:5px 20px 20px 0;
-}
-.wp-caption.alignleft {
-	margin:5px 20px 20px 0;
-}
-.wp-caption.alignright {
-	margin:5px 0 20px 20px;
-}
-.wp-caption img {
-	border:0 none;
-	height:auto;
-	margin:0;
-	max-width:98.5%;
-	padding:0;
-	width:auto;
-}
-.wp-caption .wp-caption-text,
-.gallery-caption {
-	font-size:11px;
-	line-height:17px;
-	margin:0;
-	padding:0 4px 5px;
-}
-.sticky {
-
-}
-.bypostauthor {
+footer {
+	position: relative;
+	width: 100%;
+	height: 94px;
+	background-color: $black ;
+	
 
 }
 
+	
