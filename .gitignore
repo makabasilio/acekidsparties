@@ -1,0 +1,7 @@
+
+#image folder
+img/
+
+#Illustrator folder
+AI/
+.DS_Store
