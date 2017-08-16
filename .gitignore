@@ -5,3 +5,7 @@ img/
 #Illustrator folder
 AI/
 .DS_Store
+
+#sass-cache/
+
+.sass-cache/
