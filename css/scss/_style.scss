@@ -124,32 +124,55 @@ section {
 
 	.aboutus {
 	background-color: $lightgreen1 ;
+
+		> h2 {
+		color: $eggyolk;
+		}
 	}
 
 	.photos {
 	background-color: $lightpurple ;
+		> h2 {
+			color: $purple;
+		}
 	}
 
 	.prices {
 	background-color: $lightblue1 ;
+
+		> h2 {
+				color: $white;
+		}	
 	}
 
 	.entertainer {
 
-
+		> h2 {
+				color: $blue;
+		}
 	}
 
 	.bookings {
 	background-color: $lightbrown1;
+
+		> h2 {
+				color: $brown;
+		}	
 	}
 
 	.contacts {
 
-
+		> h2 {
+				color: $white;
+		}
 	}
 
 	.invitation {
 	background-color: $black;
+
+		> h2 {
+				color: $yellow1;
+		}	
 	}
 }	
 
@@ -165,7 +188,9 @@ footer {
 	height: 200px;
 	background-color: $black ;
 	
-
+		> h2 {
+				color: $white;
+		}
 }
 
 	
