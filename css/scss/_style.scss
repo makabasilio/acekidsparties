@@ -78,6 +78,19 @@ input:focus {
 }
 
 /*------------------------------------*\
+    H1 H2 H3 H4 H5 H6
+\*------------------------------------*/
+
+
+h1 {
+	
+}
+
+h2 {
+	font-family: "sfcomic";
+	font-size: 36px;
+}
+/*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
 
@@ -102,6 +115,9 @@ section {
 	height:500px;
 	border:2px solid $black;		
 
+
+
+
 	.content {
 	height: 100%;
 	}
@@ -125,6 +141,15 @@ section {
 
 	.bookings {
 	background-color: $lightbrown1;
+	}
+
+	.contacts {
+
+
+	}
+
+	.invitation {
+	background-color: $black;
 	}
 }	
 
