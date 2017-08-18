@@ -249,9 +249,9 @@ input:focus {
 /*------------------------------------*\
     H1 H2 H3 H4 H5 H6
 \*------------------------------------*/
-h2 {
+.h2, body section .aboutus h2, body section .photos h2, body section .prices h2, body section .entertainer h2, body section .bookings h2, body section .contacts h2, body section .invitation h2 {
   font-family: "sfcomic";
-  font-size: 36px; }
+  font-size: 50px; }
 
 /*------------------------------------*\
     Navegation
@@ -259,6 +259,8 @@ h2 {
 body {
   position: relative;
   padding-top: 94px;
+  height: 100%;
+  overflow-y: scroll;
   /* header */
   /*------------------------------------*\
       FOOTER
@@ -296,34 +298,34 @@ body {
       height: 100%; }
     body section .aboutus {
       background-color: #ECF5E5; }
-      body section .aboutus > h2 {
+      body section .aboutus h2 {
         color: #F5911E; }
     body section .photos {
       background-color: #FFCADD; }
-      body section .photos > h2 {
+      body section .photos h2 {
         color: #662D8F; }
     body section .prices {
       background-color: #29A9E0; }
-      body section .prices > h2 {
+      body section .prices h2 {
         color: #FFFFFF; }
-    body section .entertainer > h2 {
+    body section .entertainer h2 {
       color: #0071BA; }
     body section .bookings {
       background-color: #FBD3A5; }
-      body section .bookings > h2 {
+      body section .bookings h2 {
         color: #7B490F; }
-    body section .contacts > h2 {
+    body section .contacts h2 {
       color: #FFFFFF; }
     body section .invitation {
       background-color: #000000; }
-      body section .invitation > h2 {
+      body section .invitation h2 {
         color: #FCC91B; }
   body footer {
     position: relative;
     width: 100%;
     height: 200px;
     background-color: #000000; }
-    body footer > h2 {
+    body footer h2 {
       color: #FFFFFF; }
 
 /*------------------------------------*\

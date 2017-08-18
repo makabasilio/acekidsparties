@@ -86,9 +86,9 @@ h1 {
 	
 }
 
-h2 {
+.h2 {
 	font-family: "sfcomic";
-	font-size: 36px;
+	font-size: 50px;
 }
 /*------------------------------------*\
     Navegation
@@ -98,6 +98,8 @@ h2 {
 body {
 	position: relative;
 	padding-top: 94px;
+	height: 100%;
+	overflow-y: scroll;
 
 /* header */
 
@@ -179,53 +181,61 @@ body {
 		.aboutus {
 		background-color: $lightgreen1 ;
 
-			> h2 {
+			 h2 {
 			color: $eggyolk;
+			@extend .h2
+
 			}
 		}
 
 		.photos {
 		background-color: $lightpurple ;
-			> h2 {
+			 h2 {
 				color: $purple;
+				@extend .h2
 			}
 		}
 
 		.prices {
 		background-color: $lightblue1 ;
 
-			> h2 {
-					color: $white;
+			 h2 {
+				color: $white;
+				@extend .h2
 			}	
 		}
 
 		.entertainer {
 
-			> h2 {
-					color: $blue;
+			 h2 {
+				color: $blue;
+				@extend .h2
 			}
 		}
 
 		.bookings {
 		background-color: $lightbrown1;
 
-			> h2 {
-			color: $brown;
+			 h2 {
+				color: $brown;
+				@extend .h2
 			}	
 		}
 
 		.contacts {
 
-			> h2 {
-			color: $white;
+			 h2 {
+				color: $white;
+				@extend .h2
 			}
 		}
 
 		.invitation {
-		background-color: $black;
+			background-color: $black;
 
-			> h2 {
-			color: $yellow1;
+			 h2 {
+				color: $yellow1;
+				@extend .h2
 			}	
 		}
 	}	
@@ -242,7 +252,7 @@ body {
 		height: 200px;
 		background-color: $black ;
 		
-			> h2 {
+			 h2 {
 					color: $white;
 			}
 	}
