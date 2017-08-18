@@ -256,80 +256,75 @@ h2 {
 /*------------------------------------*\
     Navegation
 \*------------------------------------*/
-/* header */
-.header {
-  width: 100%;
-  height: 94px;
-  padding: 0;
-  margin-top: -94px;
-  background-color: #63ABDE;
-  border-bottom: 3px solid #FFFFFF; }
-  .header .navbar-brand {
-    position: fixed;
-    left: 50px;
-    top: 25px; }
-  .header .nav-tabs {
-    border-bottom: none; }
-    .header .nav-tabs .nav-link {
-      border-bottom-width: 0px; }
-
-.navbar-nav {
-  width: 75%;
-  margin-bottom: 0px;
-  margin-top: 40px; }
-  .navbar-nav a {
-    font-family: "acmesa";
-    font-size: 1.5em;
-    color: #000000;
-    padding: 15px 30px; }
-    .navbar-nav a:hover {
-      color: #F5911E;
-      background-color: #FFFFFF; }
-
-section#heroes {
-  margin-top: 94px; }
-
-section {
-  width: 100%;
-  height: 500px;
-  border: 2px solid #000000; }
-  section .content {
-    height: 100%; }
-  section .aboutus {
-    background-color: #ECF5E5; }
-    section .aboutus > h2 {
-      color: #F5911E; }
-  section .photos {
-    background-color: #FFCADD; }
-    section .photos > h2 {
-      color: #662D8F; }
-  section .prices {
-    background-color: #29A9E0; }
-    section .prices > h2 {
-      color: #FFFFFF; }
-  section .entertainer > h2 {
-    color: #0071BA; }
-  section .bookings {
-    background-color: #FBD3A5; }
-    section .bookings > h2 {
-      color: #7B490F; }
-  section .contacts > h2 {
-    color: #FFFFFF; }
-  section .invitation {
-    background-color: #000000; }
-    section .invitation > h2 {
-      color: #FCC91B; }
-
-/*------------------------------------*\
-    FOOTER
-\*------------------------------------*/
-footer {
+body {
   position: relative;
-  width: 100%;
-  height: 200px;
-  background-color: #000000; }
-  footer > h2 {
-    color: #FFFFFF; }
+  padding-top: 94px;
+  /* header */
+  /*------------------------------------*\
+      FOOTER
+  \*------------------------------------*/ }
+  body .header {
+    width: 100%;
+    height: 94px;
+    padding: 0;
+    background-color: #63ABDE;
+    border-bottom: 3px solid #FFFFFF; }
+    body .header .navbar-brand {
+      position: fixed;
+      left: 50px;
+      top: 25px; }
+    body .header .nav-tabs {
+      border-bottom: none; }
+      body .header .nav-tabs .nav-link {
+        border-bottom-width: 0px; }
+  body .navbar-nav {
+    width: 75%;
+    padding-top: 37px;
+    margin-bottom: 0px; }
+    body .navbar-nav a {
+      font-family: "acmesa";
+      font-size: 1.5em;
+      color: #000000;
+      padding: 15px 30px; }
+      body .navbar-nav a:hover, body .navbar-nav a:active {
+        color: #F5911E;
+        background-color: #FFFFFF; }
+  body section {
+    width: 100%;
+    height: 500px; }
+    body section .content {
+      height: 100%; }
+    body section .aboutus {
+      background-color: #ECF5E5; }
+      body section .aboutus > h2 {
+        color: #F5911E; }
+    body section .photos {
+      background-color: #FFCADD; }
+      body section .photos > h2 {
+        color: #662D8F; }
+    body section .prices {
+      background-color: #29A9E0; }
+      body section .prices > h2 {
+        color: #FFFFFF; }
+    body section .entertainer > h2 {
+      color: #0071BA; }
+    body section .bookings {
+      background-color: #FBD3A5; }
+      body section .bookings > h2 {
+        color: #7B490F; }
+    body section .contacts > h2 {
+      color: #FFFFFF; }
+    body section .invitation {
+      background-color: #000000; }
+      body section .invitation > h2 {
+        color: #FCC91B; }
+  body footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #000000; }
+    body footer > h2 {
+      color: #FFFFFF; }
 
 /*------------------------------------*\
     Media screen
