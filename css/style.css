@@ -268,6 +268,9 @@ body {
   overflow-y: scroll;
   /* header */
   /*------------------------------------*\
+      SECTION PHOTOS
+  \*------------------------------------*/
+  /*------------------------------------*\
       FOOTER
   \*------------------------------------*/ }
   body .header {
@@ -329,6 +332,8 @@ body {
     color: #FFFFFF; }
   body .invitation h2 {
     color: #FAEC21; }
+  body .instagram-frame {
+    background-color: #FFFFFF; }
   body footer {
     position: relative;
     background-color: #000000; }
@@ -363,10 +368,7 @@ body {
   .navbar-nav {
     width: 100%;
     margin-bottom: 0px;
-    margin-top: 20px; }
-
-  .nav-tabs a {
-    text-decoration: none; } }
+    margin-top: 20px; } }
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/
