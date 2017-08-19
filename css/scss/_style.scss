@@ -89,6 +89,7 @@ h1 {
 .h2 {
 	font-family: "sfcomic";
 	font-size: 50px;
+	padding-bottom: 20px;
 }
 /*------------------------------------*\
     Navegation
@@ -163,33 +164,91 @@ body {
 
 
 
-	section#heroes {
 		
+
+
+
+	section#heroes {
+		@extend .section
 	}
-
-	section {
-		width:100%;
-		height:500px;
-
-
-
-
-		.content {
-		height: 100%;
-		}
-
-		.aboutus {
+	
+	section#aboutus {
 		background-color: $lightgreen1 ;
 
+		@extend .section
+
+
+
+
+
+
+		}
+
+	section#photos {
+		background-color: $lightpurple ;
+
+		@extend .section
+	}
+
+	section#prices {
+		background-color: $lightblue1 ;
+
+		@extend .section
+	}
+
+	section#entertainer {
+		@extend .section
+	}
+
+	section#bookings {
+		background-color: $lightbrown1;
+
+		@extend .section
+	}
+
+	section#contacts{
+
+		@extend .section
+	}	
+
+
+	section#invitation {
+		background-color: $black;
+
+		@extend .section
+	}	
+
+	section.container {
+			padding:50px;
+
+
+			
+		}
+
+
+
+		.aboutus {
+		
+
 			 h2 {
-			color: $eggyolk;
-			@extend .h2
+				color: $eggyolk;
+				@extend .h2
+
+			}
+
+			p {
+				font-family: "agencyr";
+				padding: 0px 20px;
+				font-size: 21px;
+				font-weight: normal;
+				letter-spacing: 1px;
+				color: $green;
 
 			}
 		}
 
 		.photos {
-		background-color: $lightpurple ;
+		
 			 h2 {
 				color: $purple;
 				@extend .h2
@@ -197,7 +256,6 @@ body {
 		}
 
 		.prices {
-		background-color: $lightblue1 ;
 
 			 h2 {
 				color: $white;
@@ -214,7 +272,6 @@ body {
 		}
 
 		.bookings {
-		background-color: $lightbrown1;
 
 			 h2 {
 				color: $brown;
@@ -231,14 +288,13 @@ body {
 		}
 
 		.invitation {
-			background-color: $black;
 
 			 h2 {
 				color: $yellow1;
 				@extend .h2
 			}	
 		}
-	}	
+		
 
 
 	/*------------------------------------*\
@@ -248,9 +304,9 @@ body {
 
 	footer {
 		position: relative;
-		width: 100%;
-		height: 200px;
 		background-color: $black ;
+
+		@extend .section;
 		
 			 h2 {
 					color: $white;
