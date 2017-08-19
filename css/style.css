@@ -253,7 +253,7 @@ input:focus {
 /*------------------------------------*\
     H1 H2 H3 H4 H5 H6
 \*------------------------------------*/
-.h2, body .aboutus h2, body .photos h2, body .prices h2, body .entertainer h2, body .bookings h2, body .contacts h2, body .invitation h2 {
+.h2, body .aboutus h2, body .photos h2, body .prices h2, body .entertainer h2, body .bookings h2, body .contacts h2, body .invitation h2, body footer h2 {
   font-family: "sfcomic";
   font-size: 50px;
   padding-bottom: 20px; }
@@ -328,12 +328,23 @@ body {
   body .contacts h2 {
     color: #FFFFFF; }
   body .invitation h2 {
-    color: #FCC91B; }
+    color: #FAEC21; }
   body footer {
     position: relative;
     background-color: #000000; }
-    body footer h2 {
-      color: #FFFFFF; }
+  body footer h2 {
+    color: #FFFFFF;
+    text-align: center; }
+  body footer h2 a {
+    display: inline-block;
+    padding: 0px;
+    margin-right: -10px; }
+  body footer h5 {
+    font-family: "sfcomic";
+    font-size: 18px;
+    color: #FAEC21;
+    text-align: center;
+    line-height: 36px; }
 
 /*------------------------------------*\
     Media screen

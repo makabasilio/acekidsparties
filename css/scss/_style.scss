@@ -86,11 +86,14 @@ h1 {
 	
 }
 
+
 .h2 {
 	font-family: "sfcomic";
 	font-size: 50px;
 	padding-bottom: 20px;
 }
+
+
 /*------------------------------------*\
     Navegation
 \*------------------------------------*/
@@ -290,7 +293,7 @@ body {
 		.invitation {
 
 			 h2 {
-				color: $yellow1;
+				color: $yellow2;
 				@extend .h2
 			}	
 		}
@@ -306,15 +309,30 @@ body {
 		position: relative;
 		background-color: $black ;
 
-		@extend .section;
+		@extend .section
 		
-			 h2 {
-					color: $white;
-			}
+
 	}
 
+	footer h2 {
+		color: $white;
+		text-align: center;
+		@extend .h2
+	}
 
+	footer h2 a {
+		display: inline-block;
+		padding: 0px;
+		margin-right: -10px;
+	}
 
+	footer h5 {
+		font-family: "sfcomic";
+		font-size: 18px;
+		color: $yellow2;
+		text-align: center;
+		line-height: 36px;
+	}
 
 } //body ends
 
