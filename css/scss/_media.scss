@@ -31,9 +31,24 @@
 
 	}
 
-	
+	/*------------------------------------*\
+		    SECTION PRICES
+	\*------------------------------------*/
+
+	.prices {
+
+		.card {
+			max-width:270px;
+			min-width: 200px;
+			height: 400px;
+			margin-right: 0px;
+			margin-bottom: 5px;
+		}		
+	}
 }
-@media only screen and (min-width:768px) {
+@media screen and (max-width:768px) {
+
+
 	
 }
 @media only screen and (min-width:1024px) {

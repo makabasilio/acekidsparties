@@ -18,4 +18,9 @@ $(document).ready(function(){
 	    
 	});
 	  
+/ section prices flip cards /
+
+	 document.querySelector(".card-flip").classList.toggle("flip");
+
+
 });

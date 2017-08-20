@@ -271,6 +271,9 @@ body {
       SECTION PHOTOS
   \*------------------------------------*/
   /*------------------------------------*\
+  	    SECTION PRICES
+  \*------------------------------------*/
+  /*------------------------------------*\
       FOOTER
   \*------------------------------------*/ }
   body .header {
@@ -334,6 +337,41 @@ body {
     color: #FAEC21; }
   body .instagram-frame {
     background-color: #FFFFFF; }
+  body .prices .card, body .prices .card-flip,
+  body .prices .front,
+  body .prices .back {
+    max-width: 270px;
+    min-width: 240px;
+    height: 400px;
+    margin-right: 5px;
+    margin-bottom: 5px; }
+  body .prices .card-flip {
+    perspective: 1000px; }
+    body .prices .card-flip:hover .flip, body .prices .card-flip.hover .flip {
+      transform: rotateY(180deg); }
+  body .prices .flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative; }
+  body .prices .front,
+  body .prices .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  body .prices .front {
+    z-index: 2;
+    transform: rotateY(0deg); }
+  body .prices .back {
+    transform: rotateY(180deg); }
+  body #super-hero-party {
+    background-color: #FCC91B; }
+  body #mega-hero-party {
+    background-color: #7FCBEC; }
+  body #ultra-hero-party {
+    background-color: #94BA87; }
+  body #face-painting-party {
+    background-color: #F597A9; }
   body footer {
     position: relative;
     background-color: #000000; }
@@ -368,7 +406,19 @@ body {
   .navbar-nav {
     width: 100%;
     margin-bottom: 0px;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  /*------------------------------------*\
+  	    SECTION PRICES
+  \*------------------------------------*/
+  .prices .card, body .prices .card-flip,
+  body .prices .front,
+  body .prices .back {
+    max-width: 270px;
+    min-width: 200px;
+    height: 400px;
+    margin-right: 0px;
+    margin-bottom: 5px; } }
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/

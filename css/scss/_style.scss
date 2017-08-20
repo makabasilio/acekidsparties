@@ -307,6 +307,80 @@ body {
 		background-color: $white;
 	}
 
+
+	/*------------------------------------*\
+		    SECTION PRICES
+	\*------------------------------------*/
+
+	.prices {
+
+		.card {
+			max-width:270px;
+			min-width: 240px;
+			height: 400px;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+
+		.card-flip {
+  			perspective: 1000px;
+  			&:hover .flip,
+  			&.hover .flip {
+    		transform: rotateY(180deg);
+
+			}
+  		}
+
+  		.card-flip,
+		.front,
+		.back {
+		  
+		  @extend .card
+		}
+
+		.flip {
+		  transition: 0.6s;
+		  transform-style: preserve-3d;
+		  position: relative;
+		}
+
+		.front,
+		.back {
+		  backface-visibility: hidden;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+
+		.front {
+		  z-index: 2;
+		  transform: rotateY(0deg);
+		}
+
+		.back {
+		  transform: rotateY(180deg);
+		}	
+}
+
+
+
+	#super-hero-party {
+		background-color: $yellow1;
+	}	
+
+	#mega-hero-party {
+		background-color: $lightblue2;
+	}
+
+	#ultra-hero-party {
+		background-color: $lightgreen2;
+	}
+
+	#face-painting-party {
+		background-color: $lightpink;
+	}
+
+
 	/*------------------------------------*\
 	    FOOTER
 	\*------------------------------------*/
