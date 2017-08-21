@@ -3,3 +3,9 @@
   width:100%;
   min-height:500px;
 }
+
+@mixin background-img ($background) {
+  background-image: $background;
+  background-repeat: none;
+  background-position: center 50px;
+}

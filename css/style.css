@@ -268,6 +268,9 @@ body {
   overflow-y: scroll;
   /* header */
   /*------------------------------------*\
+      Sections
+  \*------------------------------------*/
+  /*------------------------------------*\
       SECTION PHOTOS
   \*------------------------------------*/
   /*------------------------------------*\
@@ -302,6 +305,9 @@ body {
       body .navbar-nav a:hover, body .navbar-nav a:active {
         color: #F5911E;
         background-color: #FFFFFF; }
+  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body footer {
+    width: 100%;
+    min-height: 500px; }
   body section#aboutus {
     background-color: #ECF5E5; }
   body section#photos {
@@ -343,8 +349,7 @@ body {
     max-width: 270px;
     min-width: 240px;
     height: 400px;
-    margin-right: 5px;
-    margin-bottom: 5px; }
+    margin-bottom: 15px; }
   body .prices .card-flip {
     perspective: 1000px; }
     body .prices .card-flip:hover .flip, body .prices .card-flip.hover .flip {
@@ -362,8 +367,72 @@ body {
   body .prices .front {
     z-index: 2;
     transform: rotateY(0deg); }
+    body .prices .front h1 {
+      position: absolute;
+      bottom: 10px;
+      left: 0px;
+      right: 0px;
+      font-family: "sfcomic";
+      font-size: 36px;
+      color: #000000;
+      text-align: center; }
+    body .prices .front h3 {
+      position: absolute;
+      bottom: 60px;
+      left: 0px;
+      right: 0px;
+      font-family: "sfcomic";
+      font-size: 24px;
+      color: #000000;
+      text-align: center; }
   body .prices .back {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    background-color: #0071BA; }
+    body .prices .back .card, body .prices .back .card-flip,
+    body .prices .back .front,
+    body .prices .back .back {
+      background-color: #F0F0F0; }
+      body .prices .back .card .card-title, body .prices .back .card-flip .card-title,
+      body .prices .back .front .card-title,
+      body .prices .back .back .card-title {
+        font-family: "sfcomic ex";
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 25px; }
+      body .prices .back .card .card-subtitle, body .prices .back .card-flip .card-subtitle,
+      body .prices .back .front .card-subtitle,
+      body .prices .back .back .card-subtitle {
+        font-family: "acmesa";
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 5px; }
+      body .prices .back .card .card-text, body .prices .back .card-flip .card-text,
+      body .prices .back .front .card-text,
+      body .prices .back .back .card-text {
+        font-family: "acmesa";
+        font-size: 12px;
+        color: #000000; }
+    body .prices .back .card-border-super {
+      border: 8px solid #FCC91B; }
+      body .prices .back .card-border-super .card-title {
+        background-color: #FCC91B; }
+    body .prices .back .card-border-mega {
+      border: 8px solid #7FCBEC; }
+      body .prices .back .card-border-mega .card-title {
+        background-color: #7FCBEC; }
+    body .prices .back .card-border-ultra {
+      border: 8px solid #94BA87; }
+      body .prices .back .card-border-ultra .card-title {
+        background-color: #94BA87; }
+    body .prices .back .card-border-face {
+      border: 8px solid #F597A9; }
+      body .prices .back .card-border-face .card-title {
+        background-color: #F597A9; }
+  body .prices img {
+    margin: auto;
+    margin-top: 50px; }
   body #super-hero-party {
     background-color: #FCC91B; }
   body #mega-hero-party {
@@ -408,17 +477,15 @@ body {
     margin-bottom: 0px;
     margin-top: 20px; }
 
+  .container {
+    padding: 5px; }
+
   /*------------------------------------*\
-  	    SECTION PRICES
+  	    SECTION ABOUT US
   \*------------------------------------*/
-  .prices .card, body .prices .card-flip,
-  body .prices .front,
-  body .prices .back {
-    max-width: 270px;
-    min-width: 200px;
-    height: 400px;
-    margin-right: 0px;
-    margin-bottom: 5px; } }
+  body .aboutus p {
+    padding: 0px 0px;
+    text-align: justify; } }
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/

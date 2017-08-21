@@ -31,20 +31,31 @@
 
 	}
 
+	.container {
+		padding: 5px;
+	}
+
 	/*------------------------------------*\
-		    SECTION PRICES
+		    SECTION ABOUT US
 	\*------------------------------------*/
 
-	.prices {
 
-		.card {
-			max-width:270px;
-			min-width: 200px;
-			height: 400px;
-			margin-right: 0px;
-			margin-bottom: 5px;
-		}		
+body {
+
+	
+	.aboutus {
+
+			p {
+				padding: 0px 0px;
+				text-align: justify;
+				
+			}
 	}
+
+}
+
+
+
 }
 @media screen and (max-width:768px) {
 
