@@ -171,7 +171,7 @@ body {
 
 	.section {
  		 width:100%;
-	 	 min-height:500px;
+	 	 min-height:600px;
 	}	
 
 
@@ -313,8 +313,7 @@ body {
 	.prices {
 
 		.card {
-			max-width:270px;
-			min-width: 240px;
+			width:270px;
 			height: 400px;
 			margin-bottom: 15px;
 		}
@@ -331,7 +330,6 @@ body {
   		.card-flip,
 		.front,
 		.back {
-		  
 		  @extend .card
 		}
 
@@ -339,6 +337,8 @@ body {
 		  transition: 0.6s;
 		  transform-style: preserve-3d;
 		  position: relative;
+
+
 		}
 
 		.front,
@@ -347,6 +347,10 @@ body {
 		  position: absolute;
 		  top: 0;
 		  left: 0;
+
+
+
+
 		}
 
 		.front {
@@ -477,6 +481,69 @@ body {
 
 
 	/*------------------------------------*\
+		    SECTION ENTERTAINER
+	\*------------------------------------*/
+
+	.profile-pic {
+		display: block;
+		max-width: 410px;
+		height: 490px;
+		border: 10px solid $eggyolk;
+
+		@include background ($profile-pic, center top);
+	}
+
+
+	table, th, td {
+	    border-collapse: collapse;
+	}
+
+	table {
+
+		th {
+			font-family: 'jcandlestick';
+			font-size: 75px;
+			color: $red;
+
+		}
+
+		td {
+			font-family: "agencyr";
+			font-size: 26px;
+			line-height: 48px;
+
+		}
+
+		td:nth-child(odd) {
+			color: $blue;
+		}
+	}
+
+
+	.entertainer {
+
+		.article {
+			padding: 50px;
+		}
+
+
+		p {
+			color: $purple;
+			font-family: "acmesa";
+			font-size: 18px;
+			line-height: 48px;
+			text-align: justify;
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    		-moz-column-count: 2; /* Firefox */
+    		column-count: 2;
+
+    		-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+    		-moz-column-gap: 60px; /* Firefox */
+    		column-gap: 60px;
+		}
+
+	}
+	/*------------------------------------*\
 		    SECTION CONTACTS
 	\*------------------------------------*/
 
@@ -493,10 +560,11 @@ body {
 			bottom: 90px;
 			left: 25%;
 			padding-right: 20px;
-			background-image: url("../img/yellow-signal.png");
-			background-repeat: no-repeat;
-			background-position: center bottom;
 			z-index: 100;
+
+			@include background ($yellow-signal, center bottom);
+
+
 
 
 			.text-block {
@@ -513,7 +581,7 @@ body {
 				font-family: "acmesa";
 				color: $black;
 			}
-		}	
+	}	
 
 	#city {
 			position: absolute;

@@ -1,11 +1,16 @@
 
-.section {
-  width:100%;
-  min-height:500px;
+
+
+@mixin rotate ($degree) {
+-webkit-transform: rotate($degree);
+    -moz-transform: rotate($degree);
+    -ms-transform: rotate($degree);
+    -o-transform: rotate($degree);
+    transform: rotate($degree);
 }
 
-@mixin background-img ($background) {
-  background-image: $background;
-  background-repeat: none;
-  background-position: center 50px;
+@mixin background ($url, $position) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: $position;
 }

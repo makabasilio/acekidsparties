@@ -40,26 +40,107 @@
 	\*------------------------------------*/
 
 
-body {
+	body {
+
+		
+		.aboutus {
+
+				p {
+					padding: 0px 0px;
+					text-align: justify;
+					
+				}
+		}
+
+
+		#yellow-signal {
+				position: absolute;
+				width:270px;
+				height:480px;
+				bottom: 0px;
+				left: 10%;
+				padding-right: 20px;
+				background-image: url("../img/yellow-signal2.png");
+				background-repeat: no-repeat;
+				background-position: center bottom;
+				z-index: 100;
+
+				.text-block {
+				position: absolute;
+				top: 40px;
+				right: 30px;
+				width: 200px;
+				height: 150px;
+			}
+
+		}
+
+
+		table {
+
 
 	
-	.aboutus {
 
-			p {
-				padding: 0px 0px;
-				text-align: justify;
-				
+			td {
+				line-height: 36px;
+				display:flex;    
+	    		align-items:baseline;
 			}
+
+		}
+
+		.entertainer {
+
+		.article {
+			padding: none;
+		}
+
+		p {
+			
+			text-align: left;
+
+
+			-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    		-moz-column-count: 1; /* Firefox */
+    		column-count: 1;
+
+    		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
+    		-moz-column-gap: 0; /* Firefox */
+    		column-gap: 0;
+		}
+
+	}		
 	}
 
-}
-
-
+		
 
 }
 @media screen and (max-width:768px) {
 
+body {
+	
+	.entertainer {
 
+		.article {
+			padding: none;
+		}
+
+		p {
+			
+			text-align: left;
+
+
+			-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    		-moz-column-count: 1; /* Firefox */
+    		column-count: 1;
+
+    		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
+    		-moz-column-gap: 0; /* Firefox */
+    		column-gap: 0;
+		}
+
+	}		
+}
 	
 }
 @media only screen and (min-width:1024px) {

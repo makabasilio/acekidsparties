@@ -1,7 +1,3 @@
-.section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body footer {
-  width: 100%;
-  min-height: 500px; }
-
 /*------------------------------------*\
 	TYPOGRAPHY 
 \*------------------------------------*/
@@ -277,6 +273,9 @@ body {
   	    SECTION PRICES
   \*------------------------------------*/
   /*------------------------------------*\
+  	    SECTION ENTERTAINER
+  \*------------------------------------*/
+  /*------------------------------------*\
   	    SECTION CONTACTS
   \*------------------------------------*/
   /*------------------------------------*\
@@ -310,7 +309,7 @@ body {
         background-color: #FFFFFF; }
   body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body footer {
     width: 100%;
-    min-height: 500px; }
+    min-height: 600px; }
   body section#aboutus {
     background-color: #ECF5E5; }
   body section#photos {
@@ -349,8 +348,7 @@ body {
   body .prices .card, body .prices .card-flip,
   body .prices .front,
   body .prices .back {
-    max-width: 270px;
-    min-width: 240px;
+    width: 270px;
     height: 400px;
     margin-bottom: 15px; }
   body .prices .card-flip {
@@ -444,6 +442,44 @@ body {
     background-color: #94BA87; }
   body #face-painting-party {
     background-color: #F597A9; }
+  body .profile-pic {
+    display: block;
+    max-width: 410px;
+    height: 490px;
+    border: 10px solid #F5911E;
+    background-image: url("../img/profile-pic.jpg");
+    background-repeat: no-repeat;
+    background-position: center top; }
+  body table, body th, body td {
+    border-collapse: collapse; }
+  body table th {
+    font-family: 'jcandlestick';
+    font-size: 75px;
+    color: #FF0000; }
+  body table td {
+    font-family: "agencyr";
+    font-size: 26px;
+    line-height: 48px; }
+  body table td:nth-child(odd) {
+    color: #0071BA; }
+  body .entertainer .article {
+    padding: 50px; }
+  body .entertainer p {
+    color: #662D8F;
+    font-family: "acmesa";
+    font-size: 18px;
+    line-height: 48px;
+    text-align: justify;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 60px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 60px;
+    /* Firefox */
+    column-gap: 60px; }
   body #contacts {
     position: relative; }
   body #yellow-signal {
@@ -453,10 +489,10 @@ body {
     bottom: 90px;
     left: 25%;
     padding-right: 20px;
+    z-index: 100;
     background-image: url("../img/yellow-signal.png");
     background-repeat: no-repeat;
-    background-position: center bottom;
-    z-index: 100; }
+    background-position: center bottom; }
     body #yellow-signal .text-block {
       position: absolute;
       top: 40px;
@@ -518,7 +554,57 @@ body {
   \*------------------------------------*/
   body .aboutus p {
     padding: 0px 0px;
-    text-align: justify; } }
+    text-align: justify; }
+  body #yellow-signal {
+    position: absolute;
+    width: 270px;
+    height: 480px;
+    bottom: 0px;
+    left: 10%;
+    padding-right: 20px;
+    background-image: url("../img/yellow-signal2.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 100; }
+    body #yellow-signal .text-block {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      width: 200px;
+      height: 150px; }
+  body table td {
+    line-height: 36px;
+    display: flex;
+    align-items: baseline; }
+  body .entertainer .article {
+    padding: none; }
+  body .entertainer p {
+    text-align: left;
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 0;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 0;
+    /* Firefox */
+    column-gap: 0; } }
+@media screen and (max-width: 768px) {
+  body .entertainer .article {
+    padding: none; }
+  body .entertainer p {
+    text-align: left;
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 0;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 0;
+    /* Firefox */
+    column-gap: 0; } }
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/
