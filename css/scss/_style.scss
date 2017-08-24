@@ -484,6 +484,17 @@ body {
 		    SECTION ENTERTAINER
 	\*------------------------------------*/
 
+
+	.profile-pic-padding {
+		padding: 30px 0px 0px 8%;
+		border: 1px solid red;
+	}
+
+	.profile-info{
+		padding: 0px 0px 0px 8%;
+		border: 1px solid red;
+	}
+
 	.profile-pic {
 		display: block;
 		max-width: 410px;
@@ -499,6 +510,8 @@ body {
 	}
 
 	table {
+		width: 100%;
+
 
 		th {
 			font-family: 'jcandlestick';
@@ -530,16 +543,16 @@ body {
 		p {
 			color: $purple;
 			font-family: "acmesa";
-			font-size: 18px;
-			line-height: 48px;
+			font-size: 16px;
+			line-height: 28px;
 			text-align: justify;
 			-webkit-column-count: 2; /* Chrome, Safari, Opera */
     		-moz-column-count: 2; /* Firefox */
     		column-count: 2;
 
-    		-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
-    		-moz-column-gap: 60px; /* Firefox */
-    		column-gap: 60px;
+    		-webkit-column-gap: 25px; /* Chrome, Safari, Opera */
+    		-moz-column-gap: 25px; /* Firefox */
+    		column-gap: 25px;
 		}
 
 	}

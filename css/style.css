@@ -442,6 +442,12 @@ body {
     background-color: #94BA87; }
   body #face-painting-party {
     background-color: #F597A9; }
+  body .profile-pic-padding {
+    padding: 30px 0px 0px 8%;
+    border: 1px solid red; }
+  body .profile-info {
+    padding: 0px 0px 0px 8%;
+    border: 1px solid red; }
   body .profile-pic {
     display: block;
     max-width: 410px;
@@ -452,34 +458,36 @@ body {
     background-position: center top; }
   body table, body th, body td {
     border-collapse: collapse; }
-  body table th {
-    font-family: 'jcandlestick';
-    font-size: 75px;
-    color: #FF0000; }
-  body table td {
-    font-family: "agencyr";
-    font-size: 26px;
-    line-height: 48px; }
-  body table td:nth-child(odd) {
-    color: #0071BA; }
+  body table {
+    width: 100%; }
+    body table th {
+      font-family: 'jcandlestick';
+      font-size: 75px;
+      color: #FF0000; }
+    body table td {
+      font-family: "agencyr";
+      font-size: 26px;
+      line-height: 48px; }
+    body table td:nth-child(odd) {
+      color: #0071BA; }
   body .entertainer .article {
     padding: 50px; }
   body .entertainer p {
     color: #662D8F;
     font-family: "acmesa";
-    font-size: 18px;
-    line-height: 48px;
+    font-size: 16px;
+    line-height: 28px;
     text-align: justify;
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
     -moz-column-count: 2;
     /* Firefox */
     column-count: 2;
-    -webkit-column-gap: 60px;
+    -webkit-column-gap: 25px;
     /* Chrome, Safari, Opera */
-    -moz-column-gap: 60px;
+    -moz-column-gap: 25px;
     /* Firefox */
-    column-gap: 60px; }
+    column-gap: 25px; }
   body #contacts {
     position: relative; }
   body #yellow-signal {
@@ -531,22 +539,22 @@ body {
     Media screen
 \*------------------------------------*/
 @media screen and (max-width: 480px) {
-  .header {
+  body .header {
+    display: none;
     width: 100%;
     height: 600px;
     padding: 0;
     background-color: #63ABDE;
     border-bottom: 3px solid #FFFFFF; }
-    .header .navbar-brand {
+    body .header .navbar-brand {
       position: static;
       top: 15px; }
-
-  .navbar-nav {
+  body .navbar-nav {
+    display: none;
     width: 100%;
     margin-bottom: 0px;
     margin-top: 20px; }
-
-  .container {
+  body .container {
     padding: 5px; }
 
   /*------------------------------------*\
@@ -576,20 +584,25 @@ body {
     line-height: 36px;
     display: flex;
     align-items: baseline; }
-  body .entertainer .article {
-    padding: none; }
-  body .entertainer p {
-    text-align: left;
-    -webkit-column-count: 1;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 1;
-    /* Firefox */
-    column-count: 1;
-    -webkit-column-gap: 0;
-    /* Chrome, Safari, Opera */
-    -moz-column-gap: 0;
-    /* Firefox */
-    column-gap: 0; } }
+  body .container {
+    margin: 0px; }
+    body .container .article {
+      padding: 0px;
+      padding-top: 50px; }
+    body .container p {
+      padding: 0px;
+      -webkit-column-count: 1;
+      /* Chrome, Safari, Opera */
+      -moz-column-count: 1;
+      /* Firefox */
+      column-count: 1;
+      -webkit-column-gap: 0;
+      /* Chrome, Safari, Opera */
+      -moz-column-gap: 0;
+      /* Firefox */
+      column-gap: 0; }
+  body .col-12 {
+    padding: 0px; } }
 @media screen and (max-width: 768px) {
   body .entertainer .article {
     padding: none; }
@@ -604,7 +617,13 @@ body {
     /* Chrome, Safari, Opera */
     -moz-column-gap: 0;
     /* Firefox */
-    column-gap: 0; } }
+    column-gap: 0; }
+  body .profile-pic-padding {
+    padding: 30px 0px 0px 0%; } }
+@media screen and (max-width: 1024px) {
+  body .profile-pic-padding {
+    padding: 30px 0px 0px 0%;
+    border: 1px solid blue; } }
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/
