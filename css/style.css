@@ -252,7 +252,8 @@ input:focus {
 .h2, body .aboutus h2, body .photos h2, body .prices h2, body .entertainer h2, body .bookings h2, body .contacts h2, body .invitation h2, body footer h2 {
   font-family: "sfcomic";
   font-size: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-left: 30px; }
 
 /*------------------------------------*\
     Navegation
@@ -276,6 +277,9 @@ body {
   	    SECTION ENTERTAINER
   \*------------------------------------*/
   /*------------------------------------*\
+  	    SECTION BOOKINGS
+  \*------------------------------------*/
+  /*------------------------------------*\
   	    SECTION CONTACTS
   \*------------------------------------*/
   /*------------------------------------*\
@@ -289,7 +293,7 @@ body {
     border-bottom: 3px solid #FFFFFF; }
     body .header .navbar-brand {
       position: fixed;
-      left: 50px;
+      left: 80px;
       top: 25px; }
     body .header .nav-tabs {
       border-bottom: none; }
@@ -317,7 +321,7 @@ body {
   body section#prices {
     background-color: #29A9E0; }
   body section#bookings {
-    background-color: #FBD3A5; }
+    background-color: #F9BD78; }
   body section#invitation {
     background-color: #000000; }
   body section.container {
@@ -488,6 +492,22 @@ body {
     -moz-column-gap: 25px;
     /* Firefox */
     column-gap: 25px; }
+  body input {
+    border: none; }
+  body .form-input, body .custom-select, body textarea {
+    width: 300px;
+    font-family: 'champagne';
+    font-weight: narrow;
+    font-size: 24px;
+    padding: 5px 15px;
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #00558C;
+    background-color: #FBD3A5; }
+  body .custom-select {
+    height: 50px; }
+  body textarea {
+    border: none; }
   body #contacts {
     position: relative; }
   body #yellow-signal {
