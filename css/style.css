@@ -504,10 +504,32 @@ body {
     margin-bottom: 10px;
     color: #00558C;
     background-color: #FBD3A5; }
+    body .form-input:hover, body .custom-select:hover, body textarea:hover {
+      background-color: #000000;
+      color: #FCC91B; }
   body .custom-select {
     height: 50px; }
   body textarea {
+    resize: none;
     border: none; }
+  body .terms {
+    position: absolute;
+    bottom: 184px;
+    right: -28px;
+    padding: 9px 16px;
+    font-family: "acmesa";
+    font-size: 21px;
+    color: #FFFFFF;
+    background-color: #0071BA; }
+  body .send {
+    position: absolute;
+    bottom: 20px;
+    right: -28px;
+    padding: 30px;
+    font-family: "acmesa";
+    font-size: 21px;
+    color: #FFFFFF;
+    background-color: #0071BA; }
   body #contacts {
     position: relative; }
   body #yellow-signal {

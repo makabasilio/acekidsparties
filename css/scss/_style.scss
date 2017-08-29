@@ -580,6 +580,10 @@ body {
 		color: $darkblue;
 		background-color: $lightbrown1;
 
+		&:hover {
+			background-color: $black;
+			color: $yellow1;
+		}
 			
 	}
 
@@ -589,8 +593,31 @@ body {
 	}
 
 	textarea {
+		resize: none;
 		border: none;
 		@extend .form-input;
+	}
+
+	.terms {
+		position: absolute;
+		bottom: 184px;
+		right: -28px;
+		padding: 9px 16px;
+		font-family: "acmesa";
+		font-size: 21px;
+		color: $white;
+		background-color: $blue;
+	}
+
+	.send {
+		position: absolute;
+		bottom: 20px;
+		right: -28px;
+		padding: 30px;
+		font-family: "acmesa";
+		font-size: 21px;
+		color: $white;
+		background-color: $blue;
 	}
 
 	/*------------------------------------*\

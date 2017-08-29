@@ -476,11 +476,10 @@ etc etc.. </p>
           <label class="form-input-label sr-only">Child's age</label>
           <input class="form-input" type="text" placeholder="Child's age:">
 
-          <div class="form-group">
            
             <label for="party-day" class="sr-only">Party's day</label>
            
-              <select class="custom-select" id="day">
+              <select class="custom-select form-input form-input" id="day">
 
                 <option selected>Party's day</option>
                 <option>1</option>
@@ -516,13 +515,10 @@ etc etc.. </p>
                 <option>31</option>
               </select>
 
-          </div><!-- form group ends -->
-
-          <div class="form-group">
            
             <label for="party-month" class="sr-only">Month</label>
            
-              <select class="custom-select" id="month">
+              <select class="custom-select form-input" id="month">
            
                 <option selected>Month:</option>
                 <option>January</option>
@@ -540,13 +536,11 @@ etc etc.. </p>
                 
               </select>
 
-          </div><!-- form group ends -->
 
-          <div class="form-group">
            
             <label for="party-time" class="sr-only">Party's time</label>
            
-              <select class="custom-select" id="time">
+              <select class="custom-select form-input" id="time">
            
                 <option selected>Party's time:</option>
                 <option>10:00</option>
@@ -565,7 +559,6 @@ etc etc.. </p>
                 
               </select>
 
-          </div><!-- form group ends -->
 
           <label class="form-input-label sr-only">Party location</label>
           <input class="form-input" type="text" placeholder="Party location:">
@@ -573,11 +566,10 @@ etc etc.. </p>
           <label class="form-input-label sr-only">Postcode</label>
           <input class="form-input" type="text" placeholder="Postcode:">
 
-          <div class="form-group">
            
             <label for="how-many-children" class="sr-only">How many children</label>
            
-              <select class="custom-select" id="how-many-children">
+              <select class="custom-select form-input" id="how-many-children">
 
                 <option selected>How many children?</option>
                 <option>1</option>
@@ -613,14 +605,12 @@ etc etc.. </p>
                 <option>31</option>
               </select>
 
-          </div><!-- form group ends -->
 
 
-          <div class="form-group">
            
             <label for="find-us" class="sr-only">How did you find us?</label>
            
-              <select class="custom-select" id="find-us">
+              <select class="custom-select form-input" id="find-us">
            
                 <option selected>How did you find us?</option>
                 <option>in Person</option>
@@ -631,19 +621,24 @@ etc etc.. </p>
                 
               </select>
 
-          </div><!-- form group ends -->
 
           <label class="form-input-label sr-only">Terms and conditions</label>
           
-          <div class="form-input">Terms and conditions</div>
+          <div class="form-input">
+
+            Terms and conditions
+
+            <button class="btn terms">read it</button>
+
+          </div>
           
-          <button class="btn">read it</button>
+          
 
           <label class="form-input-label sr-only"></label>
           
           <textarea rows="4" cols="50" placeholder="Anymore detail?"></textarea>
 
-          <button class="btn">send</button>
+          <button class="btn send">send</button>
 
 
         </form><!-- form ends -->
