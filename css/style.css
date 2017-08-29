@@ -321,7 +321,9 @@ body {
   body section#prices {
     background-color: #29A9E0; }
   body section#bookings {
-    background-color: #F9BD78; }
+    position: relative;
+    background-color: #F9BD78;
+    overflow: hidden; }
   body section#invitation {
     background-color: #000000; }
   body section.container {
@@ -456,6 +458,8 @@ body {
     display: block;
     max-width: 410px;
     height: 490px;
+    margin: 0px auto;
+    margin-top: 20px;
     border: 10px solid #F5911E;
     background-image: url("../img/profile-pic.jpg");
     background-repeat: no-repeat;
@@ -492,6 +496,20 @@ body {
     -moz-column-gap: 25px;
     /* Firefox */
     column-gap: 25px; }
+  body .spiderman-sliding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 232px;
+    height: 576px;
+    z-index: 500;
+    border: 1px solid red;
+    background-image: url("../img/spiderman-sliding.png");
+    background-repeat: no-repeat;
+    background-position: center top; }
   body input {
     border: none; }
   body .form-input, body .custom-select, body textarea {
