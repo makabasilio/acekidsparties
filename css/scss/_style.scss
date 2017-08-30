@@ -173,6 +173,7 @@ body {
 	.section {
  		 width:100%;
 	 	 min-height:600px;
+	 	 padding: 50px;
 	}	
 
 
@@ -224,10 +225,8 @@ body {
 		@extend .section
 	}	
 
-	section.container {
-		padding:50px;
 
-	}
+
 
 
 
@@ -569,8 +568,9 @@ body {
 	\*------------------------------------*/
 
 	.spiderman-sliding {
-		position: absolute;
-		top: 0;
+		display: none;
+		position: fixed;
+		top: 0px;
 		left: 0; 
   		right: 0; 
   		margin-left: auto; 
@@ -578,10 +578,46 @@ body {
 		width: 232px;
 		height: 576px;
 		z-index: 500;
-		border: 1px solid red;
 
 		@include background ($spiderman, center top);
 	}
+
+	.tooltips {
+		display:none;
+		position: fixed;
+		bottom: 50px;
+  		right: 70px; 
+		width: 497px;
+		height: 542px;
+		z-index: 501;
+
+		@include background ($tooltips, center);
+
+		article {
+			position: absolute;
+			top: 22px;
+			right: 23px;
+			width: 360px;
+			height: 490px;
+			font-family: "acmesa";
+			font-size: 16px;
+			text-align: justify;
+			overflow-y: scroll;
+
+			.accept {
+				position: relative;
+				float: right;
+				padding: 9px 16px;
+				font-family: "acmesa";
+				font-size: 21px;
+				color: $white;
+				background-color: $blue;
+			}
+
+		}
+
+	}
+
 
 	input {
 
@@ -617,10 +653,13 @@ body {
 		@extend .form-input;
 	}
 
+	
+
 	.terms {
 		position: absolute;
 		bottom: 184px;
-		right: -28px;
+		left: 0px;
+		margin-left: 316px;
 		padding: 9px 16px;
 		font-family: "acmesa";
 		font-size: 21px;
@@ -631,7 +670,8 @@ body {
 	.send {
 		position: absolute;
 		bottom: 20px;
-		right: -28px;
+		left: 0px;
+		margin-left: 316px;
 		padding: 30px;
 		font-family: "acmesa";
 		font-size: 21px;

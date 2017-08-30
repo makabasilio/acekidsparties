@@ -6,6 +6,7 @@
 	
 }
 @media screen and (max-width:480px) {
+	
 	body{
 		
 		.header {
@@ -34,17 +35,20 @@
 
 		}
 
-		.container {
-			padding: 5px;
+
+		.section {
+			
+			padding: 15px;
+			
 		}
+		
 
 	}
 	
 
-	/*------------------------------------*\
-		    SECTION ABOUT US
-	\*------------------------------------*/
-
+	
+	//	SECTION ABOUT US
+	
 
 	body {
 
@@ -59,7 +63,7 @@
 		}
 
 
-
+	//	SECTION CONTACTS
 
 		#yellow-signal {
 				position: absolute;
@@ -83,10 +87,10 @@
 
 		}
 
+	//	SECTION ENTERTAINER
+
 
 		table {
-
-
 	
 
 			td {
@@ -97,12 +101,18 @@
 
 		}
 
+
+		table, th, td {
+			padding: 0px 15px 5px 15px;		
+		}
+
 		.container {
+
 
 			margin: 0px;
 
 			.article {
-				padding: 0px;
+				padding: 15px;
 				padding-top: 50px;
 			}
 
@@ -124,7 +134,28 @@
 			padding: 0px;
 		}
 
-	}
+		// SECTION BOOKINGS
+
+		.terms {
+			position: relative;
+			display: block;
+			bottom: 0px;
+			right: 0px;
+			left: 0px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.send {
+			position: relative;
+			top: 10px;
+			bottom: 20px;
+			margin-left: 50%;
+			margin-right: auto;
+			
+		}
+
+	} // body ends
 
 		
 
