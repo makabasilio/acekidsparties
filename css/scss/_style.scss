@@ -87,13 +87,26 @@ h1 {
 }
 
 
-.h2 {
+h2 {
 	font-family: "sfcomic";
 	font-size: 50px;
 	padding-bottom: 20px;
 	padding-left: 30px;
 }
 
+h4 {
+	font-family: "sfcomic";
+	font-size: 36px;
+	text-align: center;
+	color: $white;
+}
+
+h5 {
+	font-family: "sfcomic";
+	font-size: 28px;
+	text-align: center;
+	color: $white;
+}
 
 /*------------------------------------*\
     Navegation
@@ -230,22 +243,21 @@ body {
 
 
 
-		.aboutus {
+	.aboutus {
 		
 
-			 h2 {
-				color: $eggyolk;
-				@extend .h2
-
+		h2 {
+			color: $eggyolk;
+		
 			}
 
-			p {
-				font-family: "agencyr";
-				padding: 0px 20px;
-				font-size: 21px;
-				font-weight: normal;
-				letter-spacing: 1px;
-				color: $green;
+		p {
+			font-family: "agencyr";
+			padding: 0px 20px;
+			font-size: 21px;
+			font-weight: normal;
+			letter-spacing: 1px;
+			color: $green;
 
 			}
 		}
@@ -254,53 +266,127 @@ body {
 		
 			 h2 {
 				color: $purple;
-				@extend .h2
-			}
+							}
 		}
 
 		.prices {
 
 			 h2 {
 				color: $white;
-				@extend .h2
-			}	
+							}	
 		}
 
 		.entertainer {
 
 			 h2 {
 				color: $blue;
-				@extend .h2
-			}
+							}
 		}
 
 		.bookings {
 
 			 h2 {
 				color: $brown;
-				@extend .h2
-			}	
+							}	
 		}
 
 		.contacts {
 
 			 h2 {
 				color: $white;
-				@extend .h2
-			}
+							}
 		}
 
 		.invitation {
 
 			 h2 {
 				color: $yellow2;
-				@extend .h2
-			}	
+							}	
 		}
+/*------------------------------------*\
+    	Sections Heroes
+\*------------------------------------*/	
+	.select-heroes {
+		display: block;
+		width: 227px;
+		height: 350px;
+		margin-left: 15px;
+		padding: 4px;
+		padding-top: 55px;
+
+		background-color: $black;
+
 		
-	/*------------------------------------*\
+
+		ul {
+
+
+
+			.select-box {
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			border: 2px solid $black;;
+
+				&:hover {
+					border: 2px solid $white;
+				}
+			}
+
+			.greenlantern-btn {
+
+				@include background ($greenlantern-btn , center);
+			}
+
+			.starwars-btn {
+
+				@include background ($starwars-btn , center);
+			}
+
+			.flash-btn {
+
+				@include background ($flash-btn , center);
+			}
+
+			.batman-btn {
+
+				@include background ($batman-btn , center);
+			}
+
+			.captainamerica-btn {
+
+				@include background ($captainamerica-btn , center);
+			}
+
+			.spiderman-btn {
+
+				@include background ($spiderman-btn , center);
+			}
+
+			.pirate-btn {
+
+				@include background ($pirate-btn , center);
+			}
+
+			.superman-btn {
+
+				@include background ($superman-btn , center);
+			}
+
+			.ninja-btn {
+
+				@include background ($ninja-btn , center);
+			}
+
+
+		}	
+
+	}	
+
+
+/*------------------------------------*\
 	    SECTION PHOTOS
-	\*------------------------------------*/
+\*------------------------------------*/
 
 
 	.instagram-frame {
@@ -744,8 +830,7 @@ body {
 	footer h2 {
 		color: $white;
 		text-align: center;
-		@extend .h2
-	}
+			}
 
 	footer h2 a {
 		display: inline-block;

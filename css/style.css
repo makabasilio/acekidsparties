@@ -249,11 +249,23 @@ input:focus {
 /*------------------------------------*\
     H1 H2 H3 H4 H5 H6
 \*------------------------------------*/
-.h2, body .aboutus h2, body .photos h2, body .prices h2, body .entertainer h2, body .bookings h2, body .contacts h2, body .invitation h2, body footer h2 {
+h2 {
   font-family: "sfcomic";
   font-size: 50px;
   padding-bottom: 20px;
   padding-left: 30px; }
+
+h4 {
+  font-family: "sfcomic";
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF; }
+
+h5 {
+  font-family: "sfcomic";
+  font-size: 28px;
+  text-align: center;
+  color: #FFFFFF; }
 
 /*------------------------------------*\
     Navegation
@@ -268,7 +280,10 @@ body {
       Sections
   \*------------------------------------*/
   /*------------------------------------*\
-      SECTION PHOTOS
+      	Sections Heroes
+  \*------------------------------------*/
+  /*------------------------------------*\
+  	    SECTION PHOTOS
   \*------------------------------------*/
   /*------------------------------------*\
   	    SECTION PRICES
@@ -348,6 +363,57 @@ body {
     color: #FFFFFF; }
   body .invitation h2 {
     color: #FAEC21; }
+  body .select-heroes {
+    display: block;
+    width: 227px;
+    height: 350px;
+    margin-left: 15px;
+    padding: 4px;
+    padding-top: 55px;
+    background-color: #000000; }
+    body .select-heroes ul .select-box {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      border: 2px solid #000000; }
+      body .select-heroes ul .select-box:hover {
+        border: 2px solid #FFFFFF; }
+    body .select-heroes ul .greenlantern-btn {
+      background-image: url("../img/superhero-btn_01.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .starwars-btn {
+      background-image: url("../img/superhero-btn_02.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .flash-btn {
+      background-image: url("../img/superhero-btn_03.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .batman-btn {
+      background-image: url("../img/superhero-btn_04.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .captainamerica-btn {
+      background-image: url("../img/superhero-btn_05.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .spiderman-btn {
+      background-image: url("../img/superhero-btn_06.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .pirate-btn {
+      background-image: url("../img/superhero-btn_07.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .superman-btn {
+      background-image: url("../img/superhero-btn_08.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
+    body .select-heroes ul .ninja-btn {
+      background-image: url("../img/superhero-btn_09.jpg");
+      background-repeat: no-repeat;
+      background-position: center; }
   body .instagram-frame {
     background-color: #FFFFFF; }
   body .prices .card, body .prices .card-flip,
