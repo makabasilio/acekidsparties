@@ -94,6 +94,13 @@ h2 {
 	padding-left: 30px;
 }
 
+h3 {
+	font-family: "sfcomic ex";
+	font-size: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: $white;
+}
 h4 {
 	font-family: "sfcomic";
 	font-size: 36px;
@@ -107,6 +114,14 @@ h5 {
 	text-align: center;
 	color: $white;
 }
+
+h6 {
+	font-family: "guardians";
+	font-size: 18px;
+	text-align: center;
+	color: $white;
+}
+
 
 /*------------------------------------*\
     Navegation
@@ -192,6 +207,7 @@ body {
 
 
 	section#heroes {
+		position: relative;
 		@extend .section
 	}
 	
@@ -215,6 +231,7 @@ body {
 	}
 
 	section#entertainer {
+		background-color: $white;
 		@extend .section
 	}
 
@@ -259,62 +276,72 @@ body {
 			letter-spacing: 1px;
 			color: $green;
 
-			}
 		}
+	}
 
-		.photos {
+
+	.photos {
 		
-			 h2 {
-				color: $purple;
-							}
+		h2 {
+			color: $purple;
 		}
+	}
 
-		.prices {
 
-			 h2 {
-				color: $white;
-							}	
+	.prices {
+
+		 h2 {
+			color: $white;
+		}	
+	
+	}
+
+
+	.entertainer {
+
+		 h2 {
+			color: $blue;
 		}
+	}
 
-		.entertainer {
 
-			 h2 {
-				color: $blue;
-							}
+	.bookings {
+
+		 h2 {
+			color: $brown;
+		}	
+	}
+
+
+	.contacts {
+
+		 h2 {
+			color: $white;
 		}
+	}
 
-		.bookings {
 
-			 h2 {
-				color: $brown;
-							}	
-		}
+	.invitation {
 
-		.contacts {
+		h2 {
+			color: $yellow2;
+		}	
+	}
 
-			 h2 {
-				color: $white;
-							}
-		}
 
-		.invitation {
-
-			 h2 {
-				color: $yellow2;
-							}	
-		}
 /*------------------------------------*\
     	Sections Heroes
 \*------------------------------------*/	
 	.select-heroes {
+		position: relative;
 		display: block;
 		width: 227px;
 		height: 350px;
 		margin-left: 15px;
 		padding: 4px;
 		padding-top: 55px;
+		z-index: 600;
 
-		background-color: $black;
 
 		
 
@@ -382,6 +409,92 @@ body {
 		}	
 
 	}	
+
+	.hero-container {
+		position: fixed;
+		top: 94px;
+		left: 0px;
+
+		@extend .section;
+
+		.hero-body {
+			position: absolute;
+			width: 400px;
+			height: 100%;
+			right: 0px;
+			bottom: 0px;
+			margin-right: 15%;
+
+		}
+
+		.greenlantern-body {
+
+			@include background ($greenlantern-body, left bottom);
+		}
+		
+		.special-skills {
+			position: absolute;
+			width: 320px;
+			height: auto;
+			top: 120px;
+			left: 0px;
+			right: 0px;
+			margin-left: 30%;
+			margin-right: auto;
+			padding-top: 70px;
+
+
+			.subtitle-yellow {
+				color: $yellow2;
+			}
+
+			ul {
+
+				padding-top: 10px;
+
+				li {
+					font-family: "champagne";
+					font-size: 20px;
+					text-align: center;
+					text-transform: uppercase;
+
+
+				}
+
+			}
+
+		}
+
+		.greenlantern-logo {
+
+			@include background ($greenlantern-logo, center top);
+		}
+
+		.hero-profile {
+			position: absolute;
+			width: 600px;
+			height: 200px;
+			bottom: 0px;
+			left: 56px;
+			padding: 15px;
+
+			h5 {
+				text-align: left;
+				padding-left: 50px;
+			}
+
+			article {
+				font-family: "agencyr";
+				font-size: 18px;
+				color: $white;
+			}
+
+		}
+
+
+	}
+
+
 
 
 /*------------------------------------*\
@@ -769,7 +882,7 @@ body {
 		    SECTION CONTACTS
 	\*------------------------------------*/
 
-	#contacts {
+	.contacts {
 		position: relative;
 
 		
@@ -822,29 +935,33 @@ body {
 		position: relative;
 		background-color: $black ;
 
-		@extend .section
+		@extend .section;
 		
 
-	}
+		
+		h2 {
+			color: $white;
+			text-align: center;
 
-	footer h2 {
-		color: $white;
-		text-align: center;
+			a {
+				display: inline-block;
+				padding: 0px;
+				margin-right: -10px;
 			}
-
-	footer h2 a {
-		display: inline-block;
-		padding: 0px;
-		margin-right: -10px;
+					
+		}
+		
+		h5 {
+				font-family: "sfcomic";
+				font-size: 18px;
+				color: $yellow2;
+				text-align: center;
+				line-height: 36px;
+		}
 	}
 
-	footer h5 {
-		font-family: "sfcomic";
-		font-size: 18px;
-		color: $yellow2;
-		text-align: center;
-		line-height: 36px;
-	}
+	
+
 
 
 

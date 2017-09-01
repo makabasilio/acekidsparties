@@ -255,6 +255,13 @@ h2 {
   padding-bottom: 20px;
   padding-left: 30px; }
 
+h3 {
+  font-family: "sfcomic ex";
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #FFFFFF; }
+
 h4 {
   font-family: "sfcomic";
   font-size: 36px;
@@ -264,6 +271,12 @@ h4 {
 h5 {
   font-family: "sfcomic";
   font-size: 28px;
+  text-align: center;
+  color: #FFFFFF; }
+
+h6 {
+  font-family: "guardians";
+  font-size: 18px;
   text-align: center;
   color: #FFFFFF; }
 
@@ -326,16 +339,20 @@ body {
       body .navbar-nav a:hover, body .navbar-nav a:active {
         color: #F5911E;
         background-color: #FFFFFF; }
-  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body footer {
+  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
     width: 100%;
     min-height: 600px;
     padding: 50px; }
+  body section#heroes {
+    position: relative; }
   body section#aboutus {
     background-color: #ECF5E5; }
   body section#photos {
     background-color: #FFCADD; }
   body section#prices {
     background-color: #29A9E0; }
+  body section#entertainer {
+    background-color: #FFFFFF; }
   body section#bookings {
     position: relative;
     background-color: #F9BD78;
@@ -364,13 +381,14 @@ body {
   body .invitation h2 {
     color: #FAEC21; }
   body .select-heroes {
+    position: relative;
     display: block;
     width: 227px;
     height: 350px;
     margin-left: 15px;
     padding: 4px;
     padding-top: 55px;
-    background-color: #000000; }
+    z-index: 600; }
     body .select-heroes ul .select-box {
       display: inline-block;
       width: 70px;
@@ -414,6 +432,58 @@ body {
       background-image: url("../img/superhero-btn_09.jpg");
       background-repeat: no-repeat;
       background-position: center; }
+  body .hero-container {
+    position: fixed;
+    top: 94px;
+    left: 0px; }
+    body .hero-container .hero-body {
+      position: absolute;
+      width: 400px;
+      height: 100%;
+      right: 0px;
+      bottom: 0px;
+      margin-right: 15%; }
+    body .hero-container .greenlantern-body {
+      background-image: url("../img/greenlantern-body.png");
+      background-repeat: no-repeat;
+      background-position: left bottom; }
+    body .hero-container .special-skills {
+      position: absolute;
+      width: 320px;
+      height: auto;
+      top: 120px;
+      left: 0px;
+      right: 0px;
+      margin-left: 30%;
+      margin-right: auto;
+      padding-top: 70px; }
+      body .hero-container .special-skills .subtitle-yellow {
+        color: #FAEC21; }
+      body .hero-container .special-skills ul {
+        padding-top: 10px; }
+        body .hero-container .special-skills ul li {
+          font-family: "champagne";
+          font-size: 20px;
+          text-align: center;
+          text-transform: uppercase; }
+    body .hero-container .greenlantern-logo {
+      background-image: url("../img/greenlantern-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .hero-profile {
+      position: absolute;
+      width: 600px;
+      height: 200px;
+      bottom: 0px;
+      left: 56px;
+      padding: 15px; }
+      body .hero-container .hero-profile h5 {
+        text-align: left;
+        padding-left: 50px; }
+      body .hero-container .hero-profile article {
+        font-family: "agencyr";
+        font-size: 18px;
+        color: #FFFFFF; }
   body .instagram-frame {
     background-color: #FFFFFF; }
   body .prices .card, body .prices .card-flip,
@@ -644,7 +714,7 @@ body {
     font-size: 21px;
     color: #FFFFFF;
     background-color: #0071BA; }
-  body #contacts {
+  body .contacts {
     position: relative; }
   body #yellow-signal {
     position: absolute;
@@ -677,19 +747,19 @@ body {
   body footer {
     position: relative;
     background-color: #000000; }
-  body footer h2 {
-    color: #FFFFFF;
-    text-align: center; }
-  body footer h2 a {
-    display: inline-block;
-    padding: 0px;
-    margin-right: -10px; }
-  body footer h5 {
-    font-family: "sfcomic";
-    font-size: 18px;
-    color: #FAEC21;
-    text-align: center;
-    line-height: 36px; }
+    body footer h2 {
+      color: #FFFFFF;
+      text-align: center; }
+      body footer h2 a {
+        display: inline-block;
+        padding: 0px;
+        margin-right: -10px; }
+    body footer h5 {
+      font-family: "sfcomic";
+      font-size: 18px;
+      color: #FAEC21;
+      text-align: center;
+      line-height: 36px; }
 
 /*------------------------------------*\
     Media screen
@@ -710,7 +780,7 @@ body {
     width: 100%;
     margin-bottom: 0px;
     margin-top: 20px; }
-  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body footer {
+  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
     padding: 15px; }
 
   body .aboutus p {
