@@ -134,7 +134,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */ }
 
-.theflash-bg {
+.flash-bg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,cd2d00+50,000000+100 */
   background: #000000;
   /* Old browsers */
@@ -454,16 +454,24 @@ body {
       background-position: left bottom; }
     body .hero-container .special-skills {
       position: absolute;
-      width: 320px;
+      width: 420px;
       height: auto;
       top: 120px;
       left: 0px;
       right: 0px;
-      margin-left: 30%;
+      margin-left: 25%;
       margin-right: auto;
       padding-top: 70px; }
-      body .hero-container .special-skills .subtitle-yellow {
+      body .hero-container .special-skills .yellow-font {
         color: #FAEC21; }
+      body .hero-container .special-skills .white-font {
+        color: #FFFFFF; }
+      body .hero-container .special-skills .red-font {
+        color: #FF0000; }
+      body .hero-container .special-skills .black-font {
+        color: #000000; }
+      body .hero-container .special-skills .blue-font {
+        color: #7FCBEC; }
       body .hero-container .special-skills ul {
         padding-top: 10px; }
         body .hero-container .special-skills ul li {
@@ -549,6 +557,7 @@ body {
         font-family: "sfcomic ex";
         width: 100%;
         padding: 5px;
+        font-size: 14px;
         text-align: center;
         margin-bottom: 25px; }
       body .prices .back .card .card-subtitle, body .prices .back .card-flip .card-subtitle,
@@ -556,7 +565,7 @@ body {
       body .prices .back .back .card-subtitle {
         font-family: "acmesa";
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
         color: #000000;
         margin-bottom: 5px; }
       body .prices .back .card .card-text, body .prices .back .card-flip .card-text,

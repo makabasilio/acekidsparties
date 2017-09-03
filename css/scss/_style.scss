@@ -417,7 +417,11 @@ body {
 	#starwars {
 	}
 
+	#flash {
 
+	}
+
+	
 
 	.hero-container {
 		position: fixed;
@@ -445,20 +449,38 @@ body {
 
 			@include background ($starwars-body, left bottom);
 		}
+
+
 		.special-skills {
 			position: absolute;
-			width: 320px;
+			width: 420px;
 			height: auto;
 			top: 120px;
 			left: 0px;
 			right: 0px;
-			margin-left: 30%;
+			margin-left: 25%;
 			margin-right: auto;
 			padding-top: 70px;
 
 
-			.subtitle-yellow {
+			.yellow-font {
 				color: $yellow2;
+			}
+
+			.white-font {
+				color: $white;
+			}
+
+			.red-font {
+				color: $red;
+			}
+
+			.black-font {
+				color: $black;
+			}
+
+			.blue-font {
+				color: $lightblue2;
 			}
 
 			ul {
@@ -477,6 +499,8 @@ body {
 			}
 
 		}
+
+
 
 		.greenlantern-logo {
 
@@ -511,7 +535,6 @@ body {
 
 
 	}
-
 
 
 
@@ -614,6 +637,7 @@ body {
 		  		font-family: "sfcomic ex";
 		  		width: 100%;
 				padding: 5px;
+				font-size: 14px;
 		  		text-align: center;
 		  		margin-bottom: 25px;
 		  	}
@@ -621,7 +645,7 @@ body {
 		  	.card-subtitle {
 		  		font-family: "acmesa";
 		  		font-weight: bold;
-		  		font-size: 14px;
+		  		font-size: 16px;
 		  		color: $black;
 		  		margin-bottom: 5px;
 		  	}
@@ -631,6 +655,7 @@ body {
 		  		font-size: 12px;
 		  		color: $black;
 		  	}
+
 		  }
 		  
 		  .card-border-super {

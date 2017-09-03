@@ -19,6 +19,11 @@ $(document).ready(function(){
 	});
 
 
+
+/ hero selection /
+
+
+
 	  
 / section prices flip cards /
 
