@@ -17,6 +17,8 @@ $(document).ready(function(){
 
 	    
 	});
+
+
 	  
 / section prices flip cards /
 

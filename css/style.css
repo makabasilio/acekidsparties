@@ -344,7 +344,8 @@ body {
     min-height: 600px;
     padding: 50px; }
   body section#heroes {
-    position: relative; }
+    position: relative;
+    background-color: #000000; }
   body section#aboutus {
     background-color: #ECF5E5; }
   body section#photos {
@@ -447,6 +448,10 @@ body {
       background-image: url("../img/greenlantern-body.png");
       background-repeat: no-repeat;
       background-position: left bottom; }
+    body .hero-container .starwars-body {
+      background-image: url("../img/starwars-body.png");
+      background-repeat: no-repeat;
+      background-position: left bottom; }
     body .hero-container .special-skills {
       position: absolute;
       width: 320px;
@@ -468,6 +473,10 @@ body {
           text-transform: uppercase; }
     body .hero-container .greenlantern-logo {
       background-image: url("../img/greenlantern-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .starwars-logo {
+      background-image: url("../img/starwars-logo.png");
       background-repeat: no-repeat;
       background-position: center top; }
     body .hero-container .hero-profile {

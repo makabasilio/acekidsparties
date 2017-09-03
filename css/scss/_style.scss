@@ -208,6 +208,7 @@ body {
 
 	section#heroes {
 		position: relative;
+		background-color: $black;
 		@extend .section
 	}
 	
@@ -410,6 +411,14 @@ body {
 
 	}	
 
+	#greenlantern {
+	}
+
+	#starwars {
+	}
+
+
+
 	.hero-container {
 		position: fixed;
 		top: 94px;
@@ -432,6 +441,10 @@ body {
 			@include background ($greenlantern-body, left bottom);
 		}
 		
+		.starwars-body {
+
+			@include background ($starwars-body, left bottom);
+		}
 		.special-skills {
 			position: absolute;
 			width: 320px;
@@ -468,6 +481,11 @@ body {
 		.greenlantern-logo {
 
 			@include background ($greenlantern-logo, center top);
+		}
+
+		.starwars-logo {
+
+			@include background ($starwars-logo, center top );
 		}
 
 		.hero-profile {
@@ -938,7 +956,7 @@ body {
 		@extend .section;
 		
 
-		
+
 		h2 {
 			color: $white;
 			text-align: center;
