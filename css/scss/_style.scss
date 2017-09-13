@@ -202,6 +202,9 @@ body {
  		 width:100%;
 	 	 min-height:600px;
 	 	 padding: 50px;
+	 	 z-index: 1000;
+
+
 	}	
 
 
@@ -333,6 +336,11 @@ body {
 /*------------------------------------*\
     	Sections Heroes
 \*------------------------------------*/	
+	
+	
+
+
+
 	.select-heroes {
 		position: relative;
 		display: block;
@@ -341,7 +349,9 @@ body {
 		margin-left: 15px;
 		padding: 4px;
 		padding-top: 55px;
-		z-index: 600;
+		z-index: 13;
+
+
 
 
 		
@@ -359,6 +369,12 @@ body {
 				&:hover {
 					border: 2px solid $white;
 				}
+
+			}
+
+			.box-selected {
+				border: 2px solid $white;
+
 			}
 
 			.greenlantern-btn {
@@ -409,15 +425,51 @@ body {
 
 		}	
 
-	}	
+	}
+	
 
 	#greenlantern {
+		display:none;
+
 	}
 
-	#starwars {
+	#starwars {	
+		display:block;
+
 	}
 
 	#flash {
+		display:none;
+
+	}
+
+	#batman {
+		display:none;
+
+	}
+
+	#captainamerica {	
+		display:none;
+
+	}
+
+	#spiderman {
+		display:none;
+
+	}
+
+	#pirate {
+		display:none;
+
+	}
+
+	#superman {	
+		display:none;
+
+	}
+
+	#ninja {
+		display:none;
 
 	}
 
@@ -429,6 +481,9 @@ body {
 		left: 0px;
 
 		@extend .section;
+
+		z-index: 10;
+
 
 		.hero-body {
 			position: absolute;
@@ -449,6 +504,45 @@ body {
 
 			@include background ($starwars-body, left bottom);
 		}
+
+		.flash-body {
+
+
+		}
+
+		.batman-body {
+
+			@include background ($batman-body, left bottom);
+
+		}
+
+		.captainamerica-body {
+
+
+		}
+
+		.spiderman-body {
+
+
+		}
+
+		.pirate-body {
+
+
+		}
+
+		.superman-body {
+
+			@include background ($superman-body, left bottom);
+
+		}
+
+		.ninja-body {
+
+
+		}
+
+
 
 
 		.special-skills {
@@ -501,6 +595,9 @@ body {
 		}
 
 
+		.hero-container-active {
+			z-index: 12;
+		} 
 
 		.greenlantern-logo {
 
@@ -511,6 +608,45 @@ body {
 
 			@include background ($starwars-logo, center top );
 		}
+
+		.flash-logo {
+
+			@include background ($flash-logo, center top );
+		}
+
+		.batman-logo {
+
+			@include background ($batman-logo, center top );
+			
+		}
+
+		.captainamerica-logo {
+
+			@include background ($captainamerica-logo, center top );
+		}
+
+		.spiderman-logo {
+
+			@include background ($spiderman-logo, center top );
+		
+		}
+
+		.pirate-logo {
+
+			@include background ($pirate-logo, center top );
+		}
+
+		.superman-logo {
+
+			@include background ($superman-logo, center top );
+		}
+
+		.ninja-logo {
+
+			@include background ($ninja-logo, center top );
+		}
+
+
 
 		.hero-profile {
 			position: absolute;

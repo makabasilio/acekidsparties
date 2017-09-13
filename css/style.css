@@ -342,7 +342,8 @@ body {
   body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
     width: 100%;
     min-height: 600px;
-    padding: 50px; }
+    padding: 50px;
+    z-index: 1000; }
   body section#heroes {
     position: relative;
     background-color: #000000; }
@@ -389,7 +390,7 @@ body {
     margin-left: 15px;
     padding: 4px;
     padding-top: 55px;
-    z-index: 600; }
+    z-index: 13; }
     body .select-heroes ul .select-box {
       display: inline-block;
       width: 70px;
@@ -397,6 +398,8 @@ body {
       border: 2px solid #000000; }
       body .select-heroes ul .select-box:hover {
         border: 2px solid #FFFFFF; }
+    body .select-heroes ul .box-selected {
+      border: 2px solid #FFFFFF; }
     body .select-heroes ul .greenlantern-btn {
       background-image: url("../img/superhero-btn_01.jpg");
       background-repeat: no-repeat;
@@ -433,10 +436,29 @@ body {
       background-image: url("../img/superhero-btn_09.jpg");
       background-repeat: no-repeat;
       background-position: center; }
+  body #greenlantern {
+    display: none; }
+  body #starwars {
+    display: block; }
+  body #flash {
+    display: none; }
+  body #batman {
+    display: none; }
+  body #captainamerica {
+    display: none; }
+  body #spiderman {
+    display: none; }
+  body #pirate {
+    display: none; }
+  body #superman {
+    display: none; }
+  body #ninja {
+    display: none; }
   body .hero-container {
     position: fixed;
     top: 94px;
-    left: 0px; }
+    left: 0px;
+    z-index: 10; }
     body .hero-container .hero-body {
       position: absolute;
       width: 400px;
@@ -450,6 +472,14 @@ body {
       background-position: left bottom; }
     body .hero-container .starwars-body {
       background-image: url("../img/starwars-body.png");
+      background-repeat: no-repeat;
+      background-position: left bottom; }
+    body .hero-container .batman-body {
+      background-image: url("../img/batman-body.png");
+      background-repeat: no-repeat;
+      background-position: left bottom; }
+    body .hero-container .superman-body {
+      background-image: url("../img/superman-body.png");
       background-repeat: no-repeat;
       background-position: left bottom; }
     body .hero-container .special-skills {
@@ -479,12 +509,42 @@ body {
           font-size: 20px;
           text-align: center;
           text-transform: uppercase; }
+    body .hero-container .hero-container-active {
+      z-index: 12; }
     body .hero-container .greenlantern-logo {
       background-image: url("../img/greenlantern-logo.png");
       background-repeat: no-repeat;
       background-position: center top; }
     body .hero-container .starwars-logo {
       background-image: url("../img/starwars-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .flash-logo {
+      background-image: url("../img/flash-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .batman-logo {
+      background-image: url("../img/batman-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .captainamerica-logo {
+      background-image: url("../img/captainamerica-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .spiderman-logo {
+      background-image: url("../img/spiderman-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .pirate-logo {
+      background-image: url("../img/pirate-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .superman-logo {
+      background-image: url("../img/superman-logo.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+    body .hero-container .ninja-logo {
+      background-image: url("../img/ninja-logo.png");
       background-repeat: no-repeat;
       background-position: center top; }
     body .hero-container .hero-profile {
