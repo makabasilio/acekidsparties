@@ -341,7 +341,7 @@ body {
         background-color: #FFFFFF; }
   body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
     width: 100%;
-    min-height: 600px;
+    min-height: 650px;
     padding: 50px;
     z-index: 1000; }
   body section#heroes {
@@ -461,7 +461,7 @@ body {
     z-index: 10; }
     body .hero-container .hero-body {
       position: absolute;
-      width: 400px;
+      width: 500px;
       height: 100%;
       right: 0px;
       bottom: 0px;
@@ -469,24 +469,36 @@ body {
     body .hero-container .greenlantern-body {
       background-image: url("../img/greenlantern-body.png");
       background-repeat: no-repeat;
-      background-position: left bottom; }
+      background-position: center bottom; }
     body .hero-container .starwars-body {
       background-image: url("../img/starwars-body.png");
       background-repeat: no-repeat;
-      background-position: left bottom; }
+      background-position: center bottom; }
     body .hero-container .batman-body {
       background-image: url("../img/batman-body.png");
+      background-repeat: no-repeat;
+      background-position: center bottom; }
+    body .hero-container .spiderman-body {
+      background-image: url("../img/spiderman-body.png");
+      background-repeat: no-repeat;
+      background-position: right bottom; }
+    body .hero-container .pirate-body {
+      background-image: url("../img/pirate-body.png");
       background-repeat: no-repeat;
       background-position: left bottom; }
     body .hero-container .superman-body {
       background-image: url("../img/superman-body.png");
       background-repeat: no-repeat;
-      background-position: left bottom; }
+      background-position: right bottom; }
+    body .hero-container .ninja-body {
+      background-image: url("../img/ninja-body.png");
+      background-repeat: no-repeat;
+      background-position: center bottom; }
     body .hero-container .special-skills {
       position: absolute;
       width: 420px;
       height: auto;
-      top: 120px;
+      top: 160px;
       left: 0px;
       right: 0px;
       margin-left: 25%;
@@ -550,117 +562,119 @@ body {
     body .hero-container .hero-profile {
       position: absolute;
       width: 600px;
-      height: 200px;
+      height: 260px;
       bottom: 0px;
       left: 56px;
       padding: 15px; }
       body .hero-container .hero-profile h5 {
         text-align: left;
-        padding-left: 50px; }
+        padding-left: 25px; }
       body .hero-container .hero-profile article {
         font-family: "agencyr";
-        font-size: 18px;
+        font-size: 20px;
         color: #FFFFFF; }
   body .instagram-frame {
     background-color: #FFFFFF; }
-  body .prices .card, body .prices .card-flip,
-  body .prices .front,
-  body .prices .back {
-    width: 270px;
-    height: 400px;
-    margin-bottom: 15px; }
-  body .prices .card-flip {
-    perspective: 1000px; }
-    body .prices .card-flip:hover .flip, body .prices .card-flip.hover .flip {
-      transform: rotateY(180deg); }
-  body .prices .flip {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative; }
-  body .prices .front,
-  body .prices .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  body .prices .front {
-    z-index: 2;
-    transform: rotateY(0deg); }
-    body .prices .front h1 {
+  body .prices {
+    overflow: hidden; }
+    body .prices .row .card, body .prices .row .card-flip,
+    body .prices .row .front,
+    body .prices .row .back {
+      width: 270px;
+      height: 400px;
+      margin-bottom: 15px; }
+    body .prices .row .card-flip {
+      perspective: 1000px; }
+      body .prices .row .card-flip:hover .flip, body .prices .row .card-flip.hover .flip {
+        transform: rotateY(180deg); }
+    body .prices .row .flip {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative; }
+    body .prices .row .front,
+    body .prices .row .back {
+      backface-visibility: hidden;
       position: absolute;
-      bottom: 10px;
-      left: 0px;
-      right: 0px;
-      font-family: "sfcomic";
-      font-size: 36px;
-      color: #000000;
-      text-align: center; }
-    body .prices .front h3 {
-      position: absolute;
-      bottom: 60px;
-      left: 0px;
-      right: 0px;
-      font-family: "sfcomic";
-      font-size: 24px;
-      color: #000000;
-      text-align: center; }
-  body .prices .back {
-    transform: rotateY(180deg);
-    background-color: #0071BA; }
-    body .prices .back .card, body .prices .back .card-flip,
-    body .prices .back .front,
-    body .prices .back .back {
-      background-color: #F0F0F0; }
-      body .prices .back .card .card-title, body .prices .back .card-flip .card-title,
-      body .prices .back .front .card-title,
-      body .prices .back .back .card-title {
-        font-family: "sfcomic ex";
-        width: 100%;
-        padding: 5px;
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 25px; }
-      body .prices .back .card .card-subtitle, body .prices .back .card-flip .card-subtitle,
-      body .prices .back .front .card-subtitle,
-      body .prices .back .back .card-subtitle {
-        font-family: "acmesa";
-        font-weight: bold;
-        font-size: 16px;
+      top: 0;
+      left: 0; }
+    body .prices .row .front {
+      z-index: 2;
+      transform: rotateY(0deg); }
+      body .prices .row .front h1 {
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+        font-family: "sfcomic";
+        font-size: 36px;
         color: #000000;
-        margin-bottom: 5px; }
-      body .prices .back .card .card-text, body .prices .back .card-flip .card-text,
-      body .prices .back .front .card-text,
-      body .prices .back .back .card-text {
-        font-family: "acmesa";
-        font-size: 12px;
-        color: #000000; }
-    body .prices .back .card-border-super {
-      border: 8px solid #FCC91B; }
-      body .prices .back .card-border-super .card-title {
-        background-color: #FCC91B; }
-    body .prices .back .card-border-mega {
-      border: 8px solid #7FCBEC; }
-      body .prices .back .card-border-mega .card-title {
-        background-color: #7FCBEC; }
-    body .prices .back .card-border-ultra {
-      border: 8px solid #94BA87; }
-      body .prices .back .card-border-ultra .card-title {
-        background-color: #94BA87; }
-    body .prices .back .card-border-face {
-      border: 8px solid #F597A9; }
-      body .prices .back .card-border-face .card-title {
-        background-color: #F597A9; }
-  body .prices img {
-    margin: auto;
-    margin-top: 50px; }
-  body #super-hero-party {
-    background-color: #FCC91B; }
-  body #mega-hero-party {
-    background-color: #7FCBEC; }
-  body #ultra-hero-party {
-    background-color: #94BA87; }
-  body #face-painting-party {
-    background-color: #F597A9; }
+        text-align: center; }
+      body .prices .row .front h3 {
+        position: absolute;
+        bottom: 60px;
+        left: 0px;
+        right: 0px;
+        font-family: "sfcomic";
+        font-size: 24px;
+        color: #000000;
+        text-align: center; }
+    body .prices .row .back {
+      transform: rotateY(180deg);
+      background-color: #0071BA; }
+      body .prices .row .back .card, body .prices .row .back .card-flip,
+      body .prices .row .back .front,
+      body .prices .row .back .back {
+        background-color: #F0F0F0; }
+        body .prices .row .back .card .card-title, body .prices .row .back .card-flip .card-title,
+        body .prices .row .back .front .card-title,
+        body .prices .row .back .back .card-title {
+          font-family: "sfcomic ex";
+          width: 100%;
+          padding: 5px;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 25px; }
+        body .prices .row .back .card .card-subtitle, body .prices .row .back .card-flip .card-subtitle,
+        body .prices .row .back .front .card-subtitle,
+        body .prices .row .back .back .card-subtitle {
+          font-family: "acmesa";
+          font-weight: bold;
+          font-size: 16px;
+          color: #000000;
+          margin-bottom: 5px; }
+        body .prices .row .back .card .card-text, body .prices .row .back .card-flip .card-text,
+        body .prices .row .back .front .card-text,
+        body .prices .row .back .back .card-text {
+          font-family: "acmesa";
+          font-size: 12px;
+          color: #000000; }
+      body .prices .row .back .card-border-super {
+        border: 8px solid #FCC91B; }
+        body .prices .row .back .card-border-super .card-title {
+          background-color: #FCC91B; }
+      body .prices .row .back .card-border-mega {
+        border: 8px solid #7FCBEC; }
+        body .prices .row .back .card-border-mega .card-title {
+          background-color: #7FCBEC; }
+      body .prices .row .back .card-border-ultra {
+        border: 8px solid #94BA87; }
+        body .prices .row .back .card-border-ultra .card-title {
+          background-color: #94BA87; }
+      body .prices .row .back .card-border-face {
+        border: 8px solid #F597A9; }
+        body .prices .row .back .card-border-face .card-title {
+          background-color: #F597A9; }
+    body .prices .row img {
+      margin: auto;
+      margin-top: 50px; }
+    body .prices #super-hero-party {
+      background-color: #FCC91B; }
+    body .prices #mega-hero-party {
+      background-color: #7FCBEC; }
+    body .prices #ultra-hero-party {
+      background-color: #94BA87; }
+    body .prices #face-painting-party {
+      background-color: #F597A9; }
   body .profile-pic-padding {
     padding: 30px 0px 0px 8%;
     border: 1px solid red; }
@@ -710,9 +724,9 @@ body {
     /* Firefox */
     column-gap: 25px; }
   body .spiderman-sliding {
-    display: none;
+    display: block;
     position: fixed;
-    top: 0px;
+    top: -500px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -727,7 +741,7 @@ body {
     display: none;
     position: fixed;
     bottom: 50px;
-    right: 70px;
+    right: 100px;
     width: 497px;
     height: 542px;
     z-index: 501;
