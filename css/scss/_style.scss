@@ -242,7 +242,7 @@ body {
 	section#bookings {
 		position: relative;
 		background-color: $lightbrown2;
-		overflow: hidden;
+	
 
 		@extend .section
 	}
@@ -475,6 +475,27 @@ body {
 
 	
 
+	.yellow-font {
+		color: $yellow2;
+	}
+
+	.white-font {
+		color: $white;
+	}
+
+	.red-font {
+		color: $red;
+	}
+
+	.black-font {
+		color: $black;
+	}
+
+	.blue-font {
+		color: $lightblue2;
+	}	
+
+	
 	.hero-container {
 		position: fixed;
 		top: 94px;
@@ -560,25 +581,7 @@ body {
 			padding-top: 70px;
 
 
-			.yellow-font {
-				color: $yellow2;
-			}
-
-			.white-font {
-				color: $white;
-			}
-
-			.red-font {
-				color: $red;
-			}
-
-			.black-font {
-				color: $black;
-			}
-
-			.blue-font {
-				color: $lightblue2;
-			}
+			
 
 			ul {
 
@@ -956,6 +959,8 @@ body {
 		    SECTION BOOKINGS
 	\*------------------------------------*/
 
+
+
 	.spiderman-sliding {
 		display: block;
 		position: fixed;
@@ -966,7 +971,7 @@ body {
   		margin-right: auto;
 		width: 232px;
 		height: 576px;
-		z-index: 500;
+		z-index: 1001;
 
 		@include background ($spiderman, center top);
 	}
@@ -974,20 +979,20 @@ body {
 	.tooltips {
 		display:none;
 		position: fixed;
-		bottom: 50px;
-  		right: 100px; 
+		top: 220px;
+  		right: 120px; 
 		width: 497px;
-		height: 542px;
-		z-index: 501;
+		height: 360px;
+		z-index: 1001;
 
 		@include background ($tooltips, center);
 
 		article {
 			position: absolute;
-			top: 22px;
+			top: 32px;
 			right: 23px;
 			width: 360px;
-			height: 490px;
+			height: 290px;
 			font-family: "acmesa";
 			font-size: 16px;
 			text-align: justify;
@@ -1007,6 +1012,17 @@ body {
 
 	}
 
+
+	.tooltips2 {
+		@extend .tooltips;
+		background-size: 300px 100px;
+		background-position: left 180px;
+
+		article {
+			top: 220px;
+			left: 100px;
+		}
+	}
 
 	input {
 
@@ -1046,10 +1062,10 @@ body {
 
 	.terms {
 		position: absolute;
-		bottom: 184px;
+		bottom: 174px;
 		left: 0px;
-		margin-left: 316px;
-		padding: 9px 16px;
+		margin-left: 314px;
+		padding: 8px 16px;
 		font-family: "acmesa";
 		font-size: 21px;
 		color: $white;
@@ -1079,42 +1095,42 @@ body {
 	}
 
 	#yellow-signal {
+		position: absolute;
+		width:500px;
+		height:280px;
+		bottom: 90px;
+		left: 25%;
+		padding-right: 20px;
+		z-index: 100;
+
+		@include background ($yellow-signal, center bottom);
+
+
+
+
+		.text-block {
 			position: absolute;
-			width:500px;
-			height:280px;
-			bottom: 90px;
-			left: 25%;
-			padding-right: 20px;
-			z-index: 100;
+			top: 40px;
+			right: 40px;
+			width: 200px;
+			height: 150px;
+		}
 
-			@include background ($yellow-signal, center bottom);
-
-
-
-
-			.text-block {
-				position: absolute;
-				top: 40px;
-				right: 40px;
-				width: 200px;
-				height: 150px;
-			}
-
-			p {
-				text-align: center;
-				font-size: 20px;
-				font-family: "acmesa";
-				color: $black;
-			}
+		p {
+			text-align: center;
+			font-size: 20px;
+			font-family: "acmesa";
+			color: $black;
+		}
 	}	
 
 	#city {
-			position: absolute;
-			bottom: 0px;
-			left: 0px;
-			right: 0px;
-			z-index: 200;
-		}
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 200;
+	}
 
 	/*------------------------------------*\
 	    FOOTER

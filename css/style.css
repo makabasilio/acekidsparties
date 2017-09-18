@@ -357,8 +357,7 @@ body {
     background-color: #FFFFFF; }
   body section#bookings {
     position: relative;
-    background-color: #F9BD78;
-    overflow: hidden; }
+    background-color: #F9BD78; }
   body section#invitation {
     background-color: #000000; }
   body .aboutus h2 {
@@ -454,6 +453,16 @@ body {
     display: none; }
   body #ninja {
     display: none; }
+  body .yellow-font {
+    color: #FAEC21; }
+  body .white-font {
+    color: #FFFFFF; }
+  body .red-font {
+    color: #FF0000; }
+  body .black-font {
+    color: #000000; }
+  body .blue-font {
+    color: #7FCBEC; }
   body .hero-container {
     position: fixed;
     top: 94px;
@@ -504,16 +513,6 @@ body {
       margin-left: 25%;
       margin-right: auto;
       padding-top: 70px; }
-      body .hero-container .special-skills .yellow-font {
-        color: #FAEC21; }
-      body .hero-container .special-skills .white-font {
-        color: #FFFFFF; }
-      body .hero-container .special-skills .red-font {
-        color: #FF0000; }
-      body .hero-container .special-skills .black-font {
-        color: #000000; }
-      body .hero-container .special-skills .blue-font {
-        color: #7FCBEC; }
       body .hero-container .special-skills ul {
         padding-top: 10px; }
         body .hero-container .special-skills ul li {
@@ -733,32 +732,32 @@ body {
     margin-right: auto;
     width: 232px;
     height: 576px;
-    z-index: 500;
+    z-index: 1001;
     background-image: url("../img/spiderman-sliding.png");
     background-repeat: no-repeat;
     background-position: center top; }
-  body .tooltips {
+  body .tooltips, body .tooltips2 {
     display: none;
     position: fixed;
-    bottom: 50px;
-    right: 100px;
+    top: 220px;
+    right: 120px;
     width: 497px;
-    height: 542px;
-    z-index: 501;
+    height: 360px;
+    z-index: 1001;
     background-image: url("../img/tooltips.png");
     background-repeat: no-repeat;
     background-position: center; }
-    body .tooltips article {
+    body .tooltips article, body .tooltips2 article {
       position: absolute;
-      top: 22px;
+      top: 32px;
       right: 23px;
       width: 360px;
-      height: 490px;
+      height: 290px;
       font-family: "acmesa";
       font-size: 16px;
       text-align: justify;
       overflow-y: scroll; }
-      body .tooltips article .accept {
+      body .tooltips article .accept, body .tooltips2 article .accept {
         position: relative;
         float: right;
         padding: 9px 16px;
@@ -766,6 +765,12 @@ body {
         font-size: 21px;
         color: #FFFFFF;
         background-color: #0071BA; }
+  body .tooltips2 {
+    background-size: 300px 100px;
+    background-position: left 180px; }
+    body .tooltips2 article {
+      top: 220px;
+      left: 100px; }
   body input {
     border: none; }
   body .form-input, body .custom-select, body textarea {
@@ -788,10 +793,10 @@ body {
     border: none; }
   body .terms {
     position: absolute;
-    bottom: 184px;
+    bottom: 174px;
     left: 0px;
-    margin-left: 316px;
-    padding: 9px 16px;
+    margin-left: 314px;
+    padding: 8px 16px;
     font-family: "acmesa";
     font-size: 21px;
     color: #FFFFFF;

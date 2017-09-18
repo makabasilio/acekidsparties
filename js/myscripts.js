@@ -196,7 +196,7 @@ $(document).ready(function(){
 
 		$("#terms").click( function() {
 
-			$(".spiderman-sliding").animate({top: '0px'} , "slow" , 
+			$(".spiderman-sliding").animate({top: '-70px'} , "slow" , 
 
 				function () {
 
@@ -212,10 +212,15 @@ $(document).ready(function(){
 
 			$(".tooltips").fadeOut(200 , function () {
 
-				$(".spiderman-sliding").animate({top: '-500px'} , "slow");
-				$(".terms").css({"background-color" : "green"});
 
-					
+				$(".tooltips2").fadeIn(200);
+				$(".tooltips2").delay(1200).fadeOut(200 , function () {
+
+					$(".spiderman-sliding").animate({top: '-500px'} , "slow");
+					$(".terms").css({"background-color" : "green"});
+
+
+				});					
 
 			});
 
