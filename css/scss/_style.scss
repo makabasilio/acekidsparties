@@ -1132,6 +1132,68 @@ body {
 		z-index: 200;
 	}
 
+
+	/*------------------------------------*\
+		    SECTION INVITATION
+	\*------------------------------------*/
+
+
+	.invitation {
+
+
+		.row {
+
+			padding-top: 70px;
+
+
+			table {
+				width:400px;
+				text-align: right;
+					
+
+				td {
+					font-family: "acmesa";
+					font-size: 16px;
+					color: $white;
+					line-height: 30px;
+
+					a {
+						color: $lightblue2;
+					}
+				}
+
+				td:nth-child(even) {
+
+					a {
+						color: $lightgreen2;
+					}
+
+				}	
+			}
+
+
+			ul {
+			position: relative;
+			width:100%;
+			height: 300px;
+			padding: 0px;
+			margin: 0px;
+			border: 1px solid red;
+
+				li {
+					@extend ul;
+					position: absolute;
+					
+					border: 1px solid yellow;
+
+
+				}
+			}
+		}	
+	}
+
+
+
 	/*------------------------------------*\
 	    FOOTER
 	\*------------------------------------*/
