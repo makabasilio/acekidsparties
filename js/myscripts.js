@@ -1,25 +1,28 @@
 
 $(document).ready(function(){
     
-	/ scroll spy /
+	/* scroll spy */
 
 	    $('body').scrollspy ({target: "#navegation", 
 	    	offset: 200}); 
 
 	/ scroll spy offset /
 
-	    var offset = 94;
-
+	    
 		$('.navbar li a').click(function(event) {
+		    
+		    $("html , body").animate({ 
+		    	scrollTop: $( $.attr(this, "href") ).offset().top - 68 //offset position
+		    }, 2000);
+
 		    event.preventDefault();
-		    $($(this).attr('href'))[0].scrollIntoView();
-		    scrollBy(0, -offset);
+
 
 		    
 		}); // scroll spy offset ends
 
 
-	/ section heroes /
+	/* section heroes */
 
 
 		$("li.greenlantern-btn").click (function () {
@@ -186,13 +189,13 @@ $(document).ready(function(){
 
 
 		  
-	/ section prices flip cards /
+	/* section prices flip cards */
 
 		 document.querySelector(".card-flip").classList.toggle("flip");
 
 
 
-	/ section bookings spiderman slide /
+	/* section bookings spiderman slide */
 
 		$("#terms").click( function() {
 
@@ -225,6 +228,171 @@ $(document).ready(function(){
 			});
 
 		});
+
+
+		/* Invitation previews */
+
+
+		$("td#preview-btn1").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#superman-preview").fadeIn(600);
+
+		}); // preview btn1 ends	
+
+
+		$("td#preview-btn2").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#batman-preview").fadeIn(600);
+
+		}); // preview btn2 ends	
+
+
+		$("td#preview-btn3").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#spiderman-preview").fadeIn(600);
+
+		}); // preview btn3 ends
+
+
+		$("td#preview-btn4").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#greenlantern-preview").fadeIn(600);
+
+		}); // preview btn4 ends	
+
+
+		$("td#preview-btn5").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#flash-preview").fadeIn(600);
+
+		}); // preview btn5 ends	
+
+
+		$("td#preview-btn6").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#captainamerica-preview").fadeIn(600);
+
+		}); // preview btn6 ends
+
+
+		$("td#preview-btn7").click (function () {
+
+
+			$("#superman-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#starwars-preview").fadeIn(600);
+
+		}); // preview btn7 ends	
+
+
+		$("td#preview-btn8").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#pirate-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+
+
+			$("#ninja-preview").fadeIn(600);
+
+		}); // preview btn8 ends	
+
+
+		$("td#preview-btn9").click (function () {
+
+
+			$("#starwars-preview").fadeOut(200);
+			$("#flash-preview").fadeOut(200);
+			$("#superman-preview").fadeOut(200);
+			$("#captainamerica-preview").fadeOut(200);
+			$("#batman-preview").fadeOut(200);
+			$("#spiderman-preview").fadeOut(200);
+			$("#greenlantern-preview").fadeOut(200);
+			$("#ninja-preview").fadeOut(200);
+
+
+			$("#pirate-preview").fadeIn(600);
+
+		}); // preview btn9 ends	
 
 
 }); // document ends

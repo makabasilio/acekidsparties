@@ -130,7 +130,7 @@ h6 {
 
 body {
 	position: relative;
-	padding-top: 94px;
+	padding-top: 68px;
 	height: 100%;
 	overflow-y: scroll;
 
@@ -139,7 +139,7 @@ body {
 
 	.header {
 		width: 100%;
-		height: 94px;
+		height: 68px;
 		padding:0;
 		background-color: $bluesky ;
 		border-bottom: 3px solid $white;
@@ -147,17 +147,20 @@ body {
 		.navbar-brand {
 			position:fixed;
 			left: 80px;
-			top: 25px;
+			top: 0px;
 
 		}
 
 
-		.nav-tabs { border-bottom: none; 
+		.nav-tabs {
+
+			border-bottom: none;
 
 
 		
 			.nav-link {
 				border-bottom-width: 0px;
+
 			}
 
 
@@ -172,7 +175,7 @@ body {
 
 	.navbar-nav {
 		width: 75%;
-		padding-top:37px;
+		padding-top:11px;
 		margin-bottom:0px;
 
 		a {
@@ -200,7 +203,7 @@ body {
 
 	.section {
  		 width:100%;
-	 	 min-height:650px;
+	 	 min-height:670px;
 	 	 padding: 50px;
 	 	 z-index: 1000;
 
@@ -346,7 +349,7 @@ body {
 		display: block;
 		width: 227px;
 		height: 350px;
-		margin-left: 15px;
+		margin-left: 50px;
 		padding: 4px;
 		padding-top: 55px;
 		z-index: 13;
@@ -434,7 +437,7 @@ body {
 	}
 
 	#starwars {	
-		display:block;
+		display:none;
 
 	}
 
@@ -464,7 +467,7 @@ body {
 	}
 
 	#superman {	
-		display:none;
+		display:block;
 
 	}
 
@@ -1162,34 +1165,87 @@ body {
 					}
 				}
 
-				td:nth-child(even) {
-
-					a {
-						color: $lightgreen2;
-					}
-
+				td:nth-child(2) {
+					color: $lightgreen2;
 				}	
 			}
 
 
 			ul {
 			position: relative;
-			width:100%;
+			width:90%;
 			height: 300px;
 			padding: 0px;
 			margin: 0px;
-			border: 1px solid red;
 
 				li {
 					@extend ul;
 					position: absolute;
 					
-					border: 1px solid yellow;
-
-
 				}
 			}
 		}	
+
+		#preview-btn1, #preview-btn2, #preview-btn3, #preview-btn4, #preview-btn5, #preview-btn6, #preview-btn7, #preview-btn8, #preview-btn9 {
+			cursor: pointer;
+		}
+
+
+		#superman-preview {
+			display: block;
+			@include background ($superman-preview , center);
+
+		}
+
+		#batman-preview {
+			display: none;
+			@include background ($batman-preview , center);
+
+		}
+
+		#spiderman-preview {
+			display: none;
+			@include background ($spiderman-preview , center);
+
+		}
+
+		#greenlantern-preview {
+			display: none;
+			@include background ($greenlantern-preview , center);
+
+		}
+
+		#flash-preview {
+			display: none;
+			@include background ($flash-preview , center);
+
+		}
+
+		#captainamerica-preview {
+			display: none;
+			@include background ($captainamerica-preview , center);
+
+		}
+
+		#starwars-preview {
+			display: none;
+			@include background ($starwars-preview , center);
+
+		}
+
+		#ninja-preview {
+			display: none;
+			@include background ($ninja-preview , center);
+
+		}
+
+		#pirate-preview {
+			display: none;
+			@include background ($pirate-preview , center);
+
+		}
+
+
 	}
 
 
