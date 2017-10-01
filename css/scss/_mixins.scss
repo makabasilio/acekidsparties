@@ -9,9 +9,10 @@
     transform: rotate($degree);
 }
 
-@mixin background ($url, $position) {
+@mixin background ($url, $position, $size) {
   background-image: url($url);
   background-repeat: no-repeat;
   background-position: $position;
+  background-size: $size;
   
 }

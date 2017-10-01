@@ -146,7 +146,7 @@ body {
 
 		.navbar-brand {
 			position:fixed;
-			left: 80px;
+			left: 4%;
 			top: 0px;
 
 		}
@@ -174,15 +174,15 @@ body {
 
 
 	.navbar-nav {
-		width: 75%;
+		width: 80%;
 		padding-top:11px;
 		margin-bottom:0px;
 
 		a {
 			font-family: "acmesa";
-			font-size: 1.5em;
+			font-size: 1.2em;
 			color: $black;
-			padding: 15px 30px;
+			padding: 17px 30px;
 
 
 			&:hover, &:active {
@@ -382,47 +382,47 @@ body {
 
 			.greenlantern-btn {
 
-				@include background ($greenlantern-btn , center);
+				@include background ($greenlantern-btn , center, initial);
 			}
 
 			.starwars-btn {
 
-				@include background ($starwars-btn , center);
+				@include background ($starwars-btn , center, initial);
 			}
 
 			.flash-btn {
 
-				@include background ($flash-btn , center);
+				@include background ($flash-btn , center, initial);
 			}
 
 			.batman-btn {
 
-				@include background ($batman-btn , center);
+				@include background ($batman-btn , center, initial);
 			}
 
 			.captainamerica-btn {
 
-				@include background ($captainamerica-btn , center);
+				@include background ($captainamerica-btn , center, initial);
 			}
 
 			.spiderman-btn {
 
-				@include background ($spiderman-btn , center);
+				@include background ($spiderman-btn , center, initial);
 			}
 
 			.pirate-btn {
 
-				@include background ($pirate-btn , center);
+				@include background ($pirate-btn , center, initial);
 			}
 
 			.superman-btn {
 
-				@include background ($superman-btn , center);
+				@include background ($superman-btn , center, initial);
 			}
 
 			.ninja-btn {
 
-				@include background ($ninja-btn , center);
+				@include background ($ninja-btn , center, initial);
 			}
 
 
@@ -513,20 +513,20 @@ body {
 			position: absolute;
 			width: 500px;
 			height: 100%;
-			right: 0px;
+			left: 0px;
 			bottom: 0px;
-			margin-right: 15%;
+			margin-left: 45%;
 
 		}
 
 		.greenlantern-body {
 
-			@include background ($greenlantern-body, center bottom);
+			@include background ($greenlantern-body, center bottom, initial);
 		}
 		
 		.starwars-body {
 
-			@include background ($starwars-body, center bottom);
+			@include background ($starwars-body, center bottom, initial);
 		}
 
 		.flash-body {
@@ -536,7 +536,7 @@ body {
 
 		.batman-body {
 
-			@include background ($batman-body, center bottom);
+			@include background ($batman-body, center bottom, initial);
 
 		}
 
@@ -547,25 +547,25 @@ body {
 
 		.spiderman-body {
 
-			@include background ($spiderman-body, right bottom);
+			@include background ($spiderman-body, right bottom, initial);
 
 		}
 
 		.pirate-body {
 
-			@include background ($pirate-body, left bottom);
+			@include background ($pirate-body, left bottom, initial);
 
 		}
 
 		.superman-body {
 
-			@include background ($superman-body, right bottom);
+			@include background ($superman-body, right bottom, initial);
 
 		}
 
 		.ninja-body {
 
-			@include background ($ninja-body, center bottom);
+			@include background ($ninja-body, center bottom, initial);
 
 		}
 
@@ -610,49 +610,49 @@ body {
 
 		.greenlantern-logo {
 
-			@include background ($greenlantern-logo, center top);
+			@include background ($greenlantern-logo, center top, initial);
 		}
 
 		.starwars-logo {
 
-			@include background ($starwars-logo, center top );
+			@include background ($starwars-logo, center top, initial );
 		}
 
 		.flash-logo {
 
-			@include background ($flash-logo, center top );
+			@include background ($flash-logo, center top , initial);
 		}
 
 		.batman-logo {
 
-			@include background ($batman-logo, center top );
+			@include background ($batman-logo, center top , initial);
 			
 		}
 
 		.captainamerica-logo {
 
-			@include background ($captainamerica-logo, center top );
+			@include background ($captainamerica-logo, center top, initial );
 		}
 
 		.spiderman-logo {
 
-			@include background ($spiderman-logo, center top );
+			@include background ($spiderman-logo, center top, initial );
 		
 		}
 
 		.pirate-logo {
 
-			@include background ($pirate-logo, center top );
+			@include background ($pirate-logo, center top , initial);
 		}
 
 		.superman-logo {
 
-			@include background ($superman-logo, center top );
+			@include background ($superman-logo, center top , initial);
 		}
 
 		.ninja-logo {
 
-			@include background ($ninja-logo, center top );
+			@include background ($ninja-logo, center top, initial );
 		}
 
 
@@ -900,7 +900,7 @@ body {
 		margin-top: 20px;
 		border: 10px solid $eggyolk;
 
-		@include background ($profile-pic, center top);
+		@include background ($profile-pic, center top, initial);
 	}
 
 
@@ -976,7 +976,7 @@ body {
 		height: 576px;
 		z-index: 1001;
 
-		@include background ($spiderman, center top);
+		@include background ($spiderman, center top, initial);
 	}
 
 	.tooltips {
@@ -988,7 +988,7 @@ body {
 		height: 360px;
 		z-index: 1001;
 
-		@include background ($tooltips, center);
+		@include background ($tooltips, center, initial);
 
 		article {
 			position: absolute;
@@ -1106,7 +1106,7 @@ body {
 		padding-right: 20px;
 		z-index: 100;
 
-		@include background ($yellow-signal, center bottom);
+		@include background ($yellow-signal, center bottom, initial);
 
 
 
@@ -1193,55 +1193,55 @@ body {
 
 		#superman-preview {
 			display: block;
-			@include background ($superman-preview , center);
+			@include background ($superman-preview , center, initial);
 
 		}
 
 		#batman-preview {
 			display: none;
-			@include background ($batman-preview , center);
+			@include background ($batman-preview , center, initial);
 
 		}
 
 		#spiderman-preview {
 			display: none;
-			@include background ($spiderman-preview , center);
+			@include background ($spiderman-preview , center, initial);
 
 		}
 
 		#greenlantern-preview {
 			display: none;
-			@include background ($greenlantern-preview , center);
+			@include background ($greenlantern-preview , center, initial);
 
 		}
 
 		#flash-preview {
 			display: none;
-			@include background ($flash-preview , center);
+			@include background ($flash-preview , center, initial);
 
 		}
 
 		#captainamerica-preview {
 			display: none;
-			@include background ($captainamerica-preview , center);
+			@include background ($captainamerica-preview , center, initial);
 
 		}
 
 		#starwars-preview {
 			display: none;
-			@include background ($starwars-preview , center);
+			@include background ($starwars-preview , center, initial);
 
 		}
 
 		#ninja-preview {
 			display: none;
-			@include background ($ninja-preview , center);
+			@include background ($ninja-preview , center, initial);
 
 		}
 
 		#pirate-preview {
 			display: none;
-			@include background ($pirate-preview , center);
+			@include background ($pirate-preview , center, initial);
 
 		}
 
