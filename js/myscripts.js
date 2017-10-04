@@ -219,7 +219,7 @@ $(document).ready(function(){
 				$(".tooltips2").fadeIn(200);
 				$(".tooltips2").delay(1200).fadeOut(200 , function () {
 
-					$(".spiderman-sliding").animate({top: '-500px'} , "slow");
+					$(".spiderman-sliding").animate({top: '-600px'} , "slow");
 					$(".terms").css({"background-color" : "green"});
 
 

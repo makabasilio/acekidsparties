@@ -967,7 +967,7 @@ body {
 	.spiderman-sliding {
 		display: block;
 		position: fixed;
-		top: -500px;
+		top: -600px;
 		left: 0; 
   		right: 0; 
   		margin-left: auto; 
@@ -1153,6 +1153,13 @@ body {
 				width:400px;
 				text-align: right;
 					
+				th {
+					padding-bottom: 30px;
+					font-family: "acmesa";
+					font-size: 18px;
+					text-align: right;
+					color: $eggyolk;
+				}	
 
 				td {
 					font-family: "acmesa";
@@ -1167,7 +1174,11 @@ body {
 
 				td:nth-child(2) {
 					color: $lightgreen2;
-				}	
+				}
+
+				td:nth-child(3) {
+					padding-right: 25px;
+				}		
 			}
 
 
@@ -1176,6 +1187,7 @@ body {
 			width:90%;
 			height: 300px;
 			padding: 0px;
+			padding-top: 50px;
 			margin: 0px;
 
 				li {

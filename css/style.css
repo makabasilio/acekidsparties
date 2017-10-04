@@ -754,7 +754,7 @@ body {
   body .spiderman-sliding {
     display: block;
     position: fixed;
-    top: -500px;
+    top: -600px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -878,6 +878,12 @@ body {
     body .invitation .row table {
       width: 400px;
       text-align: right; }
+      body .invitation .row table th {
+        padding-bottom: 30px;
+        font-family: "acmesa";
+        font-size: 18px;
+        text-align: right;
+        color: #F5911E; }
       body .invitation .row table td {
         font-family: "acmesa";
         font-size: 16px;
@@ -887,11 +893,14 @@ body {
           color: #7FCBEC; }
       body .invitation .row table td:nth-child(2) {
         color: #94BA87; }
+      body .invitation .row table td:nth-child(3) {
+        padding-right: 25px; }
     body .invitation .row ul, body .invitation .row ul li {
       position: relative;
       width: 90%;
       height: 300px;
       padding: 0px;
+      padding-top: 50px;
       margin: 0px; }
       body .invitation .row ul li {
         position: absolute; }
