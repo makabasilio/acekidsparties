@@ -981,83 +981,313 @@ body {
     Media screen
 \*------------------------------------*/
 @media screen and (max-width: 480px) {
-  body .header {
-    display: none;
-    width: 100%;
-    height: 600px;
-    padding: 0;
-    background-color: #63ABDE;
-    border-bottom: 3px solid #FFFFFF; }
-    body .header .navbar-brand {
-      position: static;
-      top: 15px; }
-  body .navbar-nav {
-    display: none;
-    width: 100%;
-    margin-bottom: 0px;
-    margin-top: 20px; }
-  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
-    padding: 15px; }
-
-  body .aboutus p {
-    padding: 0px 0px;
-    text-align: justify; }
-  body #yellow-signal {
-    position: absolute;
-    width: 270px;
-    height: 480px;
-    bottom: 0px;
-    left: 10%;
-    padding-right: 20px;
-    background-image: url("../img/yellow-signal2.png");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    z-index: 100; }
-    body #yellow-signal .text-block {
+  body {
+    padding-top: 38px; }
+    body h4 {
+      font-family: "sfcomic";
+      font-size: 24px;
+      text-align: left;
+      color: #FFFFFF; }
+    body h5 {
+      float: left;
+      font-family: "sfcomic";
+      font-size: 20px;
+      text-align: left;
+      color: #FFFFFF; }
+    body .header {
+      display: none;
+      width: 100%;
+      height: 600px;
+      padding: 0;
+      background-color: #63ABDE;
+      border-bottom: 3px solid #FFFFFF; }
+      body .header .navbar-brand {
+        position: static;
+        top: 15px; }
+    body .navbar-nav {
+      display: none;
+      width: 100%;
+      margin-bottom: 0px;
+      margin-top: 20px; }
+    body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
+      min-height: 480px;
+      padding: 15px; }
+    body .select-heroes {
       position: absolute;
-      top: 40px;
-      right: 30px;
-      width: 200px;
-      height: 150px; }
-  body table td {
-    line-height: 36px;
-    display: flex;
-    align-items: baseline; }
-  body table, body th, body td {
-    padding: 0px 15px 5px 15px; }
-  body .container {
-    margin: 0px; }
-    body .container .article {
-      padding: 15px;
-      padding-top: 50px; }
-    body .container p {
+      display: block;
+      bottom: 10px;
+      width: 90%;
+      height: 150px;
+      margin-left: 0px;
       padding: 0px;
-      -webkit-column-count: 1;
-      /* Chrome, Safari, Opera */
-      -moz-column-count: 1;
-      /* Firefox */
-      column-count: 1;
-      -webkit-column-gap: 0;
-      /* Chrome, Safari, Opera */
-      -moz-column-gap: 0;
-      /* Firefox */
-      column-gap: 0; }
-  body .col-12 {
-    padding: 0px; }
-  body .terms {
-    position: relative;
-    display: block;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    margin-left: auto;
-    margin-right: auto; }
-  body .send {
-    position: relative;
-    top: 10px;
-    bottom: 20px;
-    margin-left: 50%;
-    margin-right: auto; } }
+      padding-top: 0px;
+      z-index: 13; }
+      body .select-heroes ul .select-box, body .select-heroes .invitation .row ul li .select-box, body .invitation .row ul .select-heroes li .select-box {
+        display: inline-block;
+        width: 50px;
+        height: 40px;
+        border: 2px solid #000000; }
+        body .select-heroes ul .select-box:hover, body .invitation .row ul .select-heroes li .select-box:hover {
+          border: 2px solid #FFFFFF; }
+      body .select-heroes ul .box-selected, body .select-heroes .invitation .row ul li .box-selected, body .invitation .row ul .select-heroes li .box-selected {
+        border: 2px solid #FFFFFF; }
+      body .select-heroes ul .greenlantern-btn, body .select-heroes .invitation .row ul li .greenlantern-btn, body .invitation .row ul .select-heroes li .greenlantern-btn {
+        background-image: url("../img/superhero-btn_01.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .starwars-btn, body .select-heroes .invitation .row ul li .starwars-btn, body .invitation .row ul .select-heroes li .starwars-btn {
+        background-image: url("../img/superhero-btn_02.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .flash-btn, body .select-heroes .invitation .row ul li .flash-btn, body .invitation .row ul .select-heroes li .flash-btn {
+        background-image: url("../img/superhero-btn_03.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .batman-btn, body .select-heroes .invitation .row ul li .batman-btn, body .invitation .row ul .select-heroes li .batman-btn {
+        background-image: url("../img/superhero-btn_04.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .captainamerica-btn, body .select-heroes .invitation .row ul li .captainamerica-btn, body .invitation .row ul .select-heroes li .captainamerica-btn {
+        background-image: url("../img/superhero-btn_05.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .spiderman-btn, body .select-heroes .invitation .row ul li .spiderman-btn, body .invitation .row ul .select-heroes li .spiderman-btn {
+        background-image: url("../img/superhero-btn_06.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .pirate-btn, body .select-heroes .invitation .row ul li .pirate-btn, body .invitation .row ul .select-heroes li .pirate-btn {
+        background-image: url("../img/superhero-btn_07.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .superman-btn, body .select-heroes .invitation .row ul li .superman-btn, body .invitation .row ul .select-heroes li .superman-btn {
+        background-image: url("../img/superhero-btn_08.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .select-heroes ul .ninja-btn, body .select-heroes .invitation .row ul li .ninja-btn, body .invitation .row ul .select-heroes li .ninja-btn {
+        background-image: url("../img/superhero-btn_09.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+    body #greenlantern {
+      display: none; }
+    body #starwars {
+      display: none; }
+    body #flash {
+      display: none; }
+    body #batman {
+      display: none; }
+    body #captainamerica {
+      display: none; }
+    body #spiderman {
+      display: none; }
+    body #pirate {
+      display: none; }
+    body #superman {
+      display: block; }
+    body #ninja {
+      display: none; }
+    body .yellow-font {
+      color: #FAEC21; }
+    body .white-font {
+      color: #FFFFFF; }
+    body .red-font {
+      color: #FF0000; }
+    body .black-font {
+      color: #000000; }
+    body .blue-font {
+      color: #7FCBEC; }
+    body .hero-container {
+      position: fixed;
+      top: 94px;
+      left: 0px;
+      z-index: 10; }
+      body .hero-container .hero-body {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        bottom: 0px;
+        margin-left: 0%; }
+      body .hero-container .greenlantern-body {
+        background-image: url("../img/greenlantern-body.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100%; }
+      body .hero-container .starwars-body {
+        background-image: url("../img/starwars-body.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100%; }
+      body .hero-container .batman-body {
+        background-image: url("../img/batman-body.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 75%; }
+      body .hero-container .spiderman-body {
+        background-image: url("../img/spiderman-body.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 100%; }
+      body .hero-container .pirate-body {
+        background-image: url("../img/pirate-body.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100%; }
+      body .hero-container .superman-body {
+        background-image: url("../img/superman-body.png");
+        background-repeat: no-repeat;
+        background-position: -70px center;
+        background-size: 120%; }
+      body .hero-container .ninja-body {
+        background-image: url("../img/ninja-body.png");
+        background-repeat: no-repeat;
+        background-position: -120px center;
+        background-size: 120%; }
+      body .hero-container .special-skills {
+        position: absolute;
+        width: 420px;
+        height: auto;
+        top: 160px;
+        left: 0px;
+        right: 0px;
+        margin-left: 25%;
+        margin-right: auto;
+        padding-top: 70px; }
+        body .hero-container .special-skills ul, body .hero-container .special-skills .invitation .row ul li, body .invitation .row ul .hero-container .special-skills li {
+          padding-top: 10px; }
+          body .hero-container .special-skills ul li, body .invitation .row ul .hero-container .special-skills li li {
+            font-family: "champagne";
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase; }
+      body .hero-container .hero-container-active {
+        z-index: 12; }
+      body .hero-container .greenlantern-logo {
+        background-image: url("../img/greenlantern-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .starwars-logo {
+        background-image: url("../img/starwars-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .flash-logo {
+        background-image: url("../img/flash-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .batman-logo {
+        background-image: url("../img/batman-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .captainamerica-logo {
+        background-image: url("../img/captainamerica-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .spiderman-logo {
+        background-image: url("../img/spiderman-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .pirate-logo {
+        background-image: url("../img/pirate-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .superman-logo {
+        background-image: url("../img/superman-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .ninja-logo {
+        background-image: url("../img/ninja-logo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: initial; }
+      body .hero-container .hero-profile {
+        position: absolute;
+        width: 600px;
+        height: 260px;
+        bottom: 0px;
+        left: 56px;
+        padding: 15px; }
+        body .hero-container .hero-profile h5 {
+          text-align: left;
+          padding-left: 25px; }
+        body .hero-container .hero-profile article {
+          font-family: "agencyr";
+          font-size: 20px;
+          color: #FFFFFF; }
+    body .aboutus p {
+      padding: 0px 0px;
+      text-align: justify; }
+    body #yellow-signal {
+      position: absolute;
+      width: 270px;
+      height: 480px;
+      bottom: 0px;
+      left: 10%;
+      padding-right: 20px;
+      background-image: url("../img/yellow-signal2.png");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      z-index: 100; }
+      body #yellow-signal .text-block {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        width: 200px;
+        height: 150px; }
+    body table td {
+      line-height: 36px;
+      display: flex;
+      align-items: baseline; }
+    body table, body th, body td {
+      padding: 0px 15px 5px 15px; }
+    body .container {
+      margin: 0px; }
+      body .container .article {
+        padding: 15px;
+        padding-top: 50px; }
+      body .container p {
+        padding: 0px;
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+        -webkit-column-gap: 0;
+        /* Chrome, Safari, Opera */
+        -moz-column-gap: 0;
+        /* Firefox */
+        column-gap: 0; }
+    body .col-12 {
+      padding: 0px; }
+    body .terms {
+      position: relative;
+      display: block;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      margin-left: auto;
+      margin-right: auto; }
+    body .send {
+      position: relative;
+      top: 10px;
+      bottom: 20px;
+      margin-left: 50%;
+      margin-right: auto; } }
 @media screen and (max-width: 800px) {
   body .header .nav-tabs {
     border-bottom: none; }

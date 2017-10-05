@@ -8,7 +8,27 @@
 @media screen and (max-width:480px) {
 	
 	body{
+		padding-top: 38px;
+
 		
+		h4 {
+			font-family: "sfcomic";
+			font-size: 24px;
+			text-align: left;
+			color: $white;
+		}
+
+		h5 {
+			float:left;
+			font-family: "sfcomic";
+			font-size: 20px;
+			text-align: left;
+			color: $white;
+		}
+
+
+
+
 		.header {
 			display: none;
 			width: 100%;
@@ -37,20 +57,359 @@
 
 
 		.section {
-			
+			min-height:480px;
 			padding: 15px;
 			
 		}
 		
 
+	 // SECTION HEROES
+
+
+
+	 .select-heroes {
+		position: absolute;
+		display: block;
+		bottom: 10px;
+		width: 90%;
+		height: 150px;
+		margin-left: 0px;
+		padding: 0px;
+		padding-top: 0px;
+		z-index: 13;
+
+
+
+
+		
+
+		ul {
+
+
+
+			.select-box {
+			display: inline-block;
+			width: 50px;
+			height: 40px;
+			border: 2px solid $black;;
+
+				&:hover {
+					border: 2px solid $white;
+				}
+
+			}
+
+			.box-selected {
+				border: 2px solid $white;
+
+			}
+
+			.greenlantern-btn {
+
+				@include background ($greenlantern-btn , center, initial);
+			}
+
+			.starwars-btn {
+
+				@include background ($starwars-btn , center, initial);
+			}
+
+			.flash-btn {
+
+				@include background ($flash-btn , center, initial);
+			}
+
+			.batman-btn {
+
+				@include background ($batman-btn , center, initial);
+			}
+
+			.captainamerica-btn {
+
+				@include background ($captainamerica-btn , center, initial);
+			}
+
+			.spiderman-btn {
+
+				@include background ($spiderman-btn , center, initial);
+			}
+
+			.pirate-btn {
+
+				@include background ($pirate-btn , center, initial);
+			}
+
+			.superman-btn {
+
+				@include background ($superman-btn , center, initial);
+			}
+
+			.ninja-btn {
+
+				@include background ($ninja-btn , center, initial);
+			}
+
+
+		}	
+
+	}
+	
+
+	#greenlantern {
+		display:none;
+
+	}
+
+	#starwars {	
+		display:none;
+
+	}
+
+	#flash {
+		display:none;
+
+	}
+
+	#batman {
+		display:none;
+
+	}
+
+	#captainamerica {	
+		display:none;
+
+	}
+
+	#spiderman {
+		display:none;
+
+	}
+
+	#pirate {
+		display:none;
+
+	}
+
+	#superman {	
+		display:block;
+
+	}
+
+	#ninja {
+		display:none;
+
+	}
+
+	
+
+	.yellow-font {
+		color: $yellow2;
+	}
+
+	.white-font {
+		color: $white;
+	}
+
+	.red-font {
+		color: $red;
+	}
+
+	.black-font {
+		color: $black;
+	}
+
+	.blue-font {
+		color: $lightblue2;
+	}	
+
+	
+	.hero-container {
+		position: fixed;
+		top: 94px;
+		left: 0px;
+
+
+		z-index: 10;
+
+
+		.hero-body {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			bottom: 0px;
+			margin-left: 0%;
+
+		}
+
+		.greenlantern-body {
+
+			@include background ($greenlantern-body, left center, 100%);
+		}
+		
+		.starwars-body {
+
+			@include background ($starwars-body, left center, 100%);
+		}
+
+		.flash-body {
+
+
+		}
+
+		.batman-body {
+
+			@include background ($batman-body, left center, 75%);
+
+		}
+
+		.captainamerica-body {
+
+
+		}
+
+		.spiderman-body {
+
+			@include background ($spiderman-body, left bottom, 100%);
+
+		}
+
+		.pirate-body {
+
+			@include background ($pirate-body, left center, 100%);
+
+		}
+
+		.superman-body {
+
+			@include background ($superman-body, -70px center, 120%);
+
+		}
+
+		.ninja-body {
+
+			@include background ($ninja-body, -120px center, 120%);
+
+		}
+
+
+
+
+		.special-skills {
+			position: absolute;
+			width: 420px;
+			height: auto;
+			top: 160px;
+			left: 0px;
+			right: 0px;
+			margin-left: 25%;
+			margin-right: auto;
+			padding-top: 70px;
+
+
+			
+
+			ul {
+
+				padding-top: 10px;
+
+				li {
+					font-family: "champagne";
+					font-size: 20px;
+					text-align: center;
+					text-transform: uppercase;
+
+
+				}
+
+			}
+
+		}
+
+
+		.hero-container-active {
+			z-index: 12;
+		} 
+
+		.greenlantern-logo {
+
+			@include background ($greenlantern-logo, center top, initial);
+		}
+
+		.starwars-logo {
+
+			@include background ($starwars-logo, center top, initial );
+		}
+
+		.flash-logo {
+
+			@include background ($flash-logo, center top , initial);
+		}
+
+		.batman-logo {
+
+			@include background ($batman-logo, center top , initial);
+			
+		}
+
+		.captainamerica-logo {
+
+			@include background ($captainamerica-logo, center top, initial );
+		}
+
+		.spiderman-logo {
+
+			@include background ($spiderman-logo, center top, initial );
+		
+		}
+
+		.pirate-logo {
+
+			@include background ($pirate-logo, center top , initial);
+		}
+
+		.superman-logo {
+
+			@include background ($superman-logo, center top , initial);
+		}
+
+		.ninja-logo {
+
+			@include background ($ninja-logo, center top, initial );
+		}
+
+
+
+		.hero-profile {
+			position: absolute;
+			width: 600px;
+			height: 260px;
+			bottom: 0px;
+			left: 56px;
+			padding: 15px;
+
+			h5 {
+				text-align: left;
+				padding-left: 25px;
+			}
+
+			article {
+				font-family: "agencyr";
+				font-size: 20px;
+				color: $white;
+			}
+
+		}
+
+
 	}
 	
 
 	
-	//	SECTION ABOUT US
+	 //	SECTION ABOUT US
 	
 
-	body {
+	
 
 		
 		.aboutus {
