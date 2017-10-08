@@ -769,21 +769,32 @@ body {
   body .tooltips, body .tooltips2 {
     display: none;
     position: fixed;
-    top: 220px;
-    right: 120px;
-    width: 497px;
-    height: 360px;
+    top: 200px;
+    left: 55%;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    overflow: visible;
     z-index: 1001;
-    background-image: url("../img/tooltips.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-    body .tooltips article, body .tooltips2 article {
+    border: 2px solid #000000;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px; }
+    body .tooltips .tip, body .tooltips2 .tip {
       position: absolute;
-      top: 32px;
-      right: 23px;
-      width: 360px;
-      height: 290px;
+      width: 35px;
+      height: 35px;
+      left: -35px;
+      bottom: 50px;
+      z-index: 1002;
+      background-image: url("../img/tip.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: initial; }
+    body .tooltips article, body .tooltips2 article {
+      max-width: 300px;
+      max-height: 300px;
       font-family: "acmesa";
       font-size: 16px;
       text-align: justify;
@@ -792,13 +803,16 @@ body {
         position: relative;
         float: right;
         padding: 9px 16px;
+        margin-bottom: 15px;
         font-family: "acmesa";
         font-size: 21px;
         color: #FFFFFF;
         background-color: #0071BA; }
   body .tooltips2 {
-    background-size: 300px 100px;
-    background-position: left 180px; }
+    top: 430px; }
+    body .tooltips2 .tip {
+      left: -34px;
+      bottom: 18px; }
     body .tooltips2 article {
       top: 220px;
       left: 100px; }
@@ -982,10 +996,25 @@ body {
 \*------------------------------------*/
 @media screen and (max-width: 480px) {
   body {
-    padding-top: 38px; }
+    padding-top: 38px;
+    overflow-x: hidden;
+    /*------------------------------------*\
+        H1 H2 H3 H4 H5 H6
+    \*------------------------------------*/ }
+    body h2 {
+      font-family: "sfcomic";
+      font-size: 30px;
+      padding-bottom: 20px;
+      padding-left: 5px; }
+    body h3 {
+      font-family: "sfcomic ex";
+      font-size: 28px;
+      padding-bottom: 20px;
+      text-align: center;
+      color: #FFFFFF; }
     body h4 {
       font-family: "sfcomic";
-      font-size: 24px;
+      font-size: 20px;
       text-align: left;
       color: #FFFFFF; }
     body h5 {
@@ -993,6 +1022,12 @@ body {
       font-family: "sfcomic";
       font-size: 20px;
       text-align: left;
+      padding-right: 5px;
+      color: #FFFFFF; }
+    body h6 {
+      font-family: "guardians";
+      font-size: 12px;
+      text-align: right;
       color: #FFFFFF; }
     body .header {
       display: none;
@@ -1010,72 +1045,77 @@ body {
       margin-bottom: 0px;
       margin-top: 20px; }
     body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
+      width: 100%;
       min-height: 480px;
       padding: 15px; }
     body .select-heroes {
       position: absolute;
       display: block;
-      bottom: 10px;
+      bottom: 20px;
       width: 90%;
       height: 150px;
       margin-left: 0px;
       padding: 0px;
       padding-top: 0px;
       z-index: 13; }
-      body .select-heroes ul .select-box, body .select-heroes .invitation .row ul li .select-box, body .invitation .row ul .select-heroes li .select-box {
-        display: inline-block;
-        width: 50px;
-        height: 40px;
-        border: 2px solid #000000; }
-        body .select-heroes ul .select-box:hover, body .invitation .row ul .select-heroes li .select-box:hover {
-          border: 2px solid #FFFFFF; }
-      body .select-heroes ul .box-selected, body .select-heroes .invitation .row ul li .box-selected, body .invitation .row ul .select-heroes li .box-selected {
-        border: 2px solid #FFFFFF; }
-      body .select-heroes ul .greenlantern-btn, body .select-heroes .invitation .row ul li .greenlantern-btn, body .invitation .row ul .select-heroes li .greenlantern-btn {
-        background-image: url("../img/superhero-btn_01.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .starwars-btn, body .select-heroes .invitation .row ul li .starwars-btn, body .invitation .row ul .select-heroes li .starwars-btn {
-        background-image: url("../img/superhero-btn_02.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .flash-btn, body .select-heroes .invitation .row ul li .flash-btn, body .invitation .row ul .select-heroes li .flash-btn {
-        background-image: url("../img/superhero-btn_03.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .batman-btn, body .select-heroes .invitation .row ul li .batman-btn, body .invitation .row ul .select-heroes li .batman-btn {
-        background-image: url("../img/superhero-btn_04.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .captainamerica-btn, body .select-heroes .invitation .row ul li .captainamerica-btn, body .invitation .row ul .select-heroes li .captainamerica-btn {
-        background-image: url("../img/superhero-btn_05.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .spiderman-btn, body .select-heroes .invitation .row ul li .spiderman-btn, body .invitation .row ul .select-heroes li .spiderman-btn {
-        background-image: url("../img/superhero-btn_06.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .pirate-btn, body .select-heroes .invitation .row ul li .pirate-btn, body .invitation .row ul .select-heroes li .pirate-btn {
-        background-image: url("../img/superhero-btn_07.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .superman-btn, body .select-heroes .invitation .row ul li .superman-btn, body .invitation .row ul .select-heroes li .superman-btn {
-        background-image: url("../img/superhero-btn_08.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
-      body .select-heroes ul .ninja-btn, body .select-heroes .invitation .row ul li .ninja-btn, body .invitation .row ul .select-heroes li .ninja-btn {
-        background-image: url("../img/superhero-btn_09.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: initial; }
+      body .select-heroes ul, body .select-heroes .invitation .row ul li, body .invitation .row ul .select-heroes li {
+        background-color: #000000; }
+        body .select-heroes ul .select-box, body .select-heroes .invitation .row ul li .select-box, body .invitation .row ul .select-heroes li .select-box {
+          display: inline-block;
+          width: 57px;
+          height: 57px;
+          margin-right: -3px;
+          margin-bottom: -3px;
+          border: 1px solid #000000; }
+          body .select-heroes ul .select-box:hover, body .invitation .row ul .select-heroes li .select-box:hover {
+            border: 1px solid #FFFFFF; }
+        body .select-heroes ul .box-selected, body .select-heroes .invitation .row ul li .box-selected, body .invitation .row ul .select-heroes li .box-selected {
+          border: 1px solid #FFFFFF; }
+        body .select-heroes ul .greenlantern-btn, body .select-heroes .invitation .row ul li .greenlantern-btn, body .invitation .row ul .select-heroes li .greenlantern-btn {
+          background-image: url("../img/superhero-btn_01.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .starwars-btn, body .select-heroes .invitation .row ul li .starwars-btn, body .invitation .row ul .select-heroes li .starwars-btn {
+          background-image: url("../img/superhero-btn_02.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .flash-btn, body .select-heroes .invitation .row ul li .flash-btn, body .invitation .row ul .select-heroes li .flash-btn {
+          background-image: url("../img/superhero-btn_03.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .batman-btn, body .select-heroes .invitation .row ul li .batman-btn, body .invitation .row ul .select-heroes li .batman-btn {
+          background-image: url("../img/superhero-btn_04.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .captainamerica-btn, body .select-heroes .invitation .row ul li .captainamerica-btn, body .invitation .row ul .select-heroes li .captainamerica-btn {
+          background-image: url("../img/superhero-btn_05.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .spiderman-btn, body .select-heroes .invitation .row ul li .spiderman-btn, body .invitation .row ul .select-heroes li .spiderman-btn {
+          background-image: url("../img/superhero-btn_06.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .pirate-btn, body .select-heroes .invitation .row ul li .pirate-btn, body .invitation .row ul .select-heroes li .pirate-btn {
+          background-image: url("../img/superhero-btn_07.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .superman-btn, body .select-heroes .invitation .row ul li .superman-btn, body .invitation .row ul .select-heroes li .superman-btn {
+          background-image: url("../img/superhero-btn_08.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
+        body .select-heroes ul .ninja-btn, body .select-heroes .invitation .row ul li .ninja-btn, body .invitation .row ul .select-heroes li .ninja-btn {
+          background-image: url("../img/superhero-btn_09.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%; }
     body #greenlantern {
       display: none; }
     body #starwars {
@@ -1108,6 +1148,7 @@ body {
       position: fixed;
       top: 94px;
       left: 0px;
+      width: 100%;
       z-index: 10; }
       body .hero-container .hero-body {
         position: absolute;
@@ -1119,53 +1160,50 @@ body {
       body .hero-container .greenlantern-body {
         background-image: url("../img/greenlantern-body.png");
         background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100%; }
+        background-position: left 40px;
+        background-size: 70%; }
       body .hero-container .starwars-body {
         background-image: url("../img/starwars-body.png");
         background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100%; }
+        background-position: left -40px;
+        background-size: 60%; }
       body .hero-container .batman-body {
         background-image: url("../img/batman-body.png");
         background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 75%; }
+        background-position: 20px 0px;
+        background-size: 40%; }
       body .hero-container .spiderman-body {
         background-image: url("../img/spiderman-body.png");
         background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: 100%; }
+        background-position: left 20px;
+        background-size: 70%; }
       body .hero-container .pirate-body {
         background-image: url("../img/pirate-body.png");
         background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100%; }
+        background-position: 0px 40px;
+        background-size: 75%; }
       body .hero-container .superman-body {
         background-image: url("../img/superman-body.png");
         background-repeat: no-repeat;
-        background-position: -70px center;
-        background-size: 120%; }
+        background-position: left 20px;
+        background-size: 75%; }
       body .hero-container .ninja-body {
         background-image: url("../img/ninja-body.png");
         background-repeat: no-repeat;
-        background-position: -120px center;
-        background-size: 120%; }
+        background-position: 10px 40px;
+        background-size: 75%; }
       body .hero-container .special-skills {
         position: absolute;
-        width: 420px;
+        width: 160px;
         height: auto;
-        top: 160px;
-        left: 0px;
-        right: 0px;
-        margin-left: 25%;
-        margin-right: auto;
+        top: 10px;
+        margin-left: 140px;
         padding-top: 70px; }
         body .hero-container .special-skills ul, body .hero-container .special-skills .invitation .row ul li, body .invitation .row ul .hero-container .special-skills li {
           padding-top: 10px; }
           body .hero-container .special-skills ul li, body .invitation .row ul .hero-container .special-skills li li {
             font-family: "champagne";
-            font-size: 20px;
+            font-size: 16px;
             text-align: center;
             text-transform: uppercase; }
       body .hero-container .hero-container-active {
@@ -1216,6 +1254,7 @@ body {
         background-position: center top;
         background-size: initial; }
       body .hero-container .hero-profile {
+        display: none;
         position: absolute;
         width: 600px;
         height: 260px;
@@ -1287,7 +1326,85 @@ body {
       top: 10px;
       bottom: 20px;
       margin-left: 50%;
-      margin-right: auto; } }
+      margin-right: auto; }
+    body .spiderman-sliding {
+      display: block;
+      position: fixed;
+      top: -600px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 232px;
+      height: 576px;
+      z-index: 1001;
+      background-image: url("../img/spiderman-sliding.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 75%; }
+    body .tooltips, body .tooltips2 {
+      display: none;
+      position: fixed;
+      top: 50px;
+      left: 1%;
+      width: auto;
+      height: auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      overflow: visible;
+      z-index: 1001;
+      border: 2px solid #000000;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px; }
+      body .tooltips .tip, body .tooltips2 .tip {
+        display: none;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: -35px;
+        bottom: 50px;
+        z-index: 1002;
+        background-image: url("../img/tip.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: initial; }
+      body .tooltips article, body .tooltips2 article {
+        max-width: 260px;
+        max-height: 300px;
+        font-family: "acmesa";
+        font-size: 16px;
+        text-align: justify;
+        overflow-y: scroll; }
+        body .tooltips article .accept, body .tooltips2 article .accept {
+          position: relative;
+          float: right;
+          padding: 9px 16px;
+          margin-bottom: 15px;
+          font-family: "acmesa";
+          font-size: 21px;
+          color: #FFFFFF;
+          background-color: #0071BA; }
+    body .tooltips2 {
+      display: none;
+      position: fixed;
+      width: 250px;
+      height: auto;
+      top: 230px;
+      left: 0px;
+      right: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      overflow: visible;
+      z-index: 1001;
+      border: 2px solid #000000; }
+      body .tooltips2 .tip2 {
+        display: none; }
+      body .tooltips2 article {
+        top: 220px;
+        left: 100px; } }
 @media screen and (max-width: 800px) {
   body .header .nav-tabs {
     border-bottom: none; }

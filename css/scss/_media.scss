@@ -9,11 +9,37 @@
 	
 	body{
 		padding-top: 38px;
+		overflow-x: hidden;
 
-		
+
+/*------------------------------------*\
+    H1 H2 H3 H4 H5 H6
+\*------------------------------------*/
+
+
+		h1 {
+			
+		}
+
+
+		h2 {
+			font-family: "sfcomic";
+			font-size: 30px;
+			padding-bottom: 20px;
+			padding-left: 5px;
+		}
+
+		h3 {
+			font-family: "sfcomic ex";
+			font-size: 28px;
+			padding-bottom: 20px;
+			text-align: center;
+			color: $white;
+		}
+
 		h4 {
 			font-family: "sfcomic";
-			font-size: 24px;
+			font-size: 20px;
 			text-align: left;
 			color: $white;
 		}
@@ -23,6 +49,14 @@
 			font-family: "sfcomic";
 			font-size: 20px;
 			text-align: left;
+			padding-right: 5px;
+			color: $white;
+		}
+
+		h6 {
+			font-family: "guardians";
+			font-size: 12px;
+			text-align: right;
 			color: $white;
 		}
 
@@ -57,6 +91,7 @@
 
 
 		.section {
+			width:100%;
 			min-height:480px;
 			padding: 15px;
 			
@@ -70,7 +105,7 @@
 	 .select-heroes {
 		position: absolute;
 		display: block;
-		bottom: 10px;
+		bottom: 20px;
 		width: 90%;
 		height: 150px;
 		margin-left: 0px;
@@ -81,72 +116,76 @@
 
 
 
+
 		
 
 		ul {
+			background-color: $black;
 
 
 
 			.select-box {
 			display: inline-block;
-			width: 50px;
-			height: 40px;
-			border: 2px solid $black;;
+			width: 57px;
+			height: 57px;
+			margin-right: -3px;
+			margin-bottom: -3px;
+			border: 1px solid $black;;
 
 				&:hover {
-					border: 2px solid $white;
+					border: 1px solid $white;
 				}
 
 			}
 
 			.box-selected {
-				border: 2px solid $white;
+				border: 1px solid $white;
 
 			}
 
 			.greenlantern-btn {
 
-				@include background ($greenlantern-btn , center, initial);
+				@include background ($greenlantern-btn , center, 100%);
 			}
 
 			.starwars-btn {
 
-				@include background ($starwars-btn , center, initial);
+				@include background ($starwars-btn , center, 100%);
 			}
 
 			.flash-btn {
 
-				@include background ($flash-btn , center, initial);
+				@include background ($flash-btn , center, 100%);
 			}
 
 			.batman-btn {
 
-				@include background ($batman-btn , center, initial);
+				@include background ($batman-btn , center, 100%);
 			}
 
 			.captainamerica-btn {
 
-				@include background ($captainamerica-btn , center, initial);
+				@include background ($captainamerica-btn , center, 100%);
 			}
 
 			.spiderman-btn {
 
-				@include background ($spiderman-btn , center, initial);
+				@include background ($spiderman-btn , center, 100%);
 			}
 
 			.pirate-btn {
 
-				@include background ($pirate-btn , center, initial);
+				@include background ($pirate-btn , center, 100%);
 			}
 
 			.superman-btn {
 
-				@include background ($superman-btn , center, initial);
+				@include background ($superman-btn , center, 100%);
 			}
 
 			.ninja-btn {
 
-				@include background ($ninja-btn , center, initial);
+				@include background ($ninja-btn , center, 100%);
 			}
 
 
@@ -227,6 +266,7 @@
 		position: fixed;
 		top: 94px;
 		left: 0px;
+		width: 100%;
 
 
 		z-index: 10;
@@ -244,12 +284,12 @@
 
 		.greenlantern-body {
 
-			@include background ($greenlantern-body, left center, 100%);
+			@include background ($greenlantern-body, left 40px, 70%);
 		}
 		
 		.starwars-body {
 
-			@include background ($starwars-body, left center, 100%);
+			@include background ($starwars-body, left -40px, 60%);
 		}
 
 		.flash-body {
@@ -259,7 +299,7 @@
 
 		.batman-body {
 
-			@include background ($batman-body, left center, 75%);
+			@include background ($batman-body, 20px 0px, 40%);
 
 		}
 
@@ -270,25 +310,25 @@
 
 		.spiderman-body {
 
-			@include background ($spiderman-body, left bottom, 100%);
+			@include background ($spiderman-body, left 20px, 70%);
 
 		}
 
 		.pirate-body {
 
-			@include background ($pirate-body, left center, 100%);
+			@include background ($pirate-body, 0px 40px, 75%);
 
 		}
 
 		.superman-body {
 
-			@include background ($superman-body, -70px center, 120%);
+			@include background ($superman-body, left 20px, 75%);
 
 		}
 
 		.ninja-body {
 
-			@include background ($ninja-body, -120px center, 120%);
+			@include background ($ninja-body, 10px 40px, 75%);
 
 		}
 
@@ -297,13 +337,10 @@
 
 		.special-skills {
 			position: absolute;
-			width: 420px;
+			width: 160px;
 			height: auto;
-			top: 160px;
-			left: 0px;
-			right: 0px;
-			margin-left: 25%;
-			margin-right: auto;
+			top: 10px;
+			margin-left: 140px;
 			padding-top: 70px;
 
 
@@ -315,7 +352,7 @@
 
 				li {
 					font-family: "champagne";
-					font-size: 20px;
+					font-size: 16px;
 					text-align: center;
 					text-transform: uppercase;
 
@@ -343,12 +380,12 @@
 
 		.flash-logo {
 
-			@include background ($flash-logo, center top , initial);
+			@include background ($flash-logo, center top, initial);
 		}
 
 		.batman-logo {
 
-			@include background ($batman-logo, center top , initial);
+			@include background ($batman-logo, center top, initial);
 			
 		}
 
@@ -365,7 +402,7 @@
 
 		.pirate-logo {
 
-			@include background ($pirate-logo, center top , initial);
+			@include background ($pirate-logo, center top, initial);
 		}
 
 		.superman-logo {
@@ -381,6 +418,7 @@
 
 
 		.hero-profile {
+			display: none;
 			position: absolute;
 			width: 600px;
 			height: 260px;
@@ -512,6 +550,98 @@
 			margin-left: 50%;
 			margin-right: auto;
 			
+		}
+
+		.spiderman-sliding {
+			display: block;
+			position: fixed;
+			top: -600px;
+			left: 0; 
+	  		right: 0; 
+	  		margin-left: auto; 
+	  		margin-right: auto;
+			width: 232px;
+			height: 576px;
+			z-index: 1001;
+
+			@include background ($spiderman, center top, 75%);
+		}
+
+		.tooltips {
+			display:none;
+			position: fixed;
+			top: 50px;
+	  		left: 1%; 
+			width: auto;
+			height: auto;
+			padding: 20px;
+			background-color: $white;
+			overflow: visible;
+			z-index: 1001;
+			border: 2px solid $black;
+
+			@include border-radius (25px);
+
+			.tip {
+				display: none;
+				position: absolute;
+				width: 35px;
+				height: 35px;
+				left: -35px;
+				bottom: 50px;
+				z-index: 1002;
+
+				@include background ($tip , center, initial);
+			}
+
+			article {
+				max-width: 260px;
+				max-height: 300px;
+				font-family: "acmesa";
+				font-size: 16px;
+				text-align: justify;
+				overflow-y: scroll;
+
+				
+
+				.accept {
+					position: relative;
+					float: right;
+					padding: 9px 16px;
+					margin-bottom: 15px;
+					font-family: "acmesa";
+					font-size: 21px;
+					color: $white;
+					background-color: $blue;
+				}
+			}
+		}
+
+
+		.tooltips2 {
+			display:none;
+			position: fixed;
+			width: 250px;
+			height: auto;
+			top: 230px;
+	  		left: 0px;
+	  		right: 0px;
+	  		margin-left: auto;
+	  		margin-right: auto; 
+			padding: 20px;
+			background-color: $white;
+			overflow: visible;
+			z-index: 1001;
+			border: 2px solid $black;
+			
+			.tip2 {
+				display: none;
+			}
+
+			article {
+				top: 220px;
+				left: 100px;
+			}
 		}
 
 	} // body ends

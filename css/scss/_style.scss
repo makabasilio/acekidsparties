@@ -982,29 +982,44 @@ body {
 	.tooltips {
 		display:none;
 		position: fixed;
-		top: 220px;
-  		right: 120px; 
-		width: 497px;
-		height: 360px;
+		top: 200px;
+  		left: 55%; 
+		width: auto;
+		height: auto;
+		padding: 20px;
+		background-color: $white;
+		overflow: visible;
 		z-index: 1001;
+		border: 2px solid $black;
 
-		@include background ($tooltips, center, initial);
+		@include border-radius (25px);
+
+		.tip {
+			position: absolute;
+			width: 35px;
+			height: 35px;
+			left: -35px;
+			bottom: 50px;
+			z-index: 1002;
+
+			@include background ($tip , center, initial);
+		}
 
 		article {
-			position: absolute;
-			top: 32px;
-			right: 23px;
-			width: 360px;
-			height: 290px;
+			max-width: 300px;
+			max-height: 300px;
 			font-family: "acmesa";
 			font-size: 16px;
 			text-align: justify;
 			overflow-y: scroll;
 
+			
+
 			.accept {
 				position: relative;
 				float: right;
 				padding: 9px 16px;
+				margin-bottom: 15px;
 				font-family: "acmesa";
 				font-size: 21px;
 				color: $white;
@@ -1018,8 +1033,13 @@ body {
 
 	.tooltips2 {
 		@extend .tooltips;
-		background-size: 300px 100px;
-		background-position: left 180px;
+		top: 430px;
+		
+		.tip {
+			@extend .tip;
+			left: -34px;
+			bottom: 18px;
+		}
 
 		article {
 			top: 220px;
