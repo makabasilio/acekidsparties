@@ -460,32 +460,18 @@
 		}
 
 
-	//	SECTION CONTACTS
-
-		#yellow-signal {
-				position: absolute;
-				width:270px;
-				height:480px;
-				bottom: 0px;
-				left: 10%;
-				padding-right: 20px;
-				background-image: url("../img/yellow-signal2.png");
-				background-repeat: no-repeat;
-				background-position: center bottom;
-				z-index: 100;
-
-				.text-block {
-				position: absolute;
-				top: 40px;
-				right: 30px;
-				width: 200px;
-				height: 150px;
-			}
-
-		}
-
 	//	SECTION ENTERTAINER
 
+		.profile-pic {
+			display: block;
+			max-width: 410px;
+			height: 400px;
+			margin: 0px 3%;
+			margin-top: 20px;
+			border: 10px solid $eggyolk;
+
+			@include background ($profile-pic, center top, initial);
+		}	
 
 		table {
 	
@@ -531,7 +517,7 @@
 			padding: 0px;
 		}
 
-		// SECTION BOOKINGS
+	// SECTION BOOKINGS
 
 		.terms {
 			position: relative;
@@ -643,6 +629,58 @@
 				left: 100px;
 			}
 		}
+
+		.send {
+			position: relative;
+			bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px 150%;
+			font-family: "acmesa";
+			font-size: 21px;
+			color: $white;
+			background-color: $blue;
+		}
+
+
+	//	SECTION CONTACTS
+
+		#yellow-signal {
+				position: absolute;
+				width:270px;
+				height:380px;
+				bottom: 0px;
+				left: 10%;
+				padding-right: 20px;
+
+				@include background ($yellow-signal2, top center, initial);
+
+				z-index: 100;
+
+				.text-block {
+				position: absolute;
+				top: 40px;
+				right: 30px;
+				width: 200px;
+				height: 150px;
+			}
+
+		}
+
+	//	SECTION INVITATION
+
+		section#invitation {
+			display: none;
+		}	
+
+
+	//	SECTION FOOTER
+
+		footer {
+			padding-top: 100px;
+		}
+
+
 
 	} // body ends
 
