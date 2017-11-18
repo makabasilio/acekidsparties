@@ -256,15 +256,6 @@ body {
 	}	
 
 
-	section#invitation {
-		background-color: $black;
-
-		@extend .section
-	}	
-
-
-
-
 
 
 	.aboutus {
@@ -328,12 +319,7 @@ body {
 	}
 
 
-	.invitation {
-
-		h2 {
-			color: $yellow2;
-		}	
-	}
+	
 
 
 /*------------------------------------*\
@@ -1148,130 +1134,7 @@ body {
 	}
 
 
-	/*------------------------------------*\
-		    SECTION INVITATION
-	\*------------------------------------*/
-
-
-	.invitation {
-
-
-		.row {
-
-			padding-top: 70px;
-
-
-			table {
-				width:400px;
-				text-align: right;
-					
-				th {
-					padding-bottom: 30px;
-					font-family: "acmesa";
-					font-size: 18px;
-					text-align: right;
-					color: $eggyolk;
-				}	
-
-				td {
-					font-family: "acmesa";
-					font-size: 16px;
-					color: $white;
-					line-height: 30px;
-
-					a {
-						color: $lightblue2;
-					}
-				}
-
-				td:nth-child(2) {
-					color: $lightgreen2;
-				}
-
-				td:nth-child(3) {
-					padding-right: 25px;
-				}		
-			}
-
-
-			ul {
-			position: relative;
-			width:90%;
-			height: 300px;
-			padding: 0px;
-			padding-top: 50px;
-			margin: 0px;
-
-				li {
-					@extend ul;
-					position: absolute;
-					
-				}
-			}
-		}	
-
-		#preview-btn1, #preview-btn2, #preview-btn3, #preview-btn4, #preview-btn5, #preview-btn6, #preview-btn7, #preview-btn8, #preview-btn9 {
-			cursor: pointer;
-		}
-
-
-		#superman-preview {
-			display: block;
-			@include background ($superman-preview , center, initial);
-
-		}
-
-		#batman-preview {
-			display: none;
-			@include background ($batman-preview , center, initial);
-
-		}
-
-		#spiderman-preview {
-			display: none;
-			@include background ($spiderman-preview , center, initial);
-
-		}
-
-		#greenlantern-preview {
-			display: none;
-			@include background ($greenlantern-preview , center, initial);
-
-		}
-
-		#flash-preview {
-			display: none;
-			@include background ($flash-preview , center, initial);
-
-		}
-
-		#captainamerica-preview {
-			display: none;
-			@include background ($captainamerica-preview , center, initial);
-
-		}
-
-		#starwars-preview {
-			display: none;
-			@include background ($starwars-preview , center, initial);
-
-		}
-
-		#ninja-preview {
-			display: none;
-			@include background ($ninja-preview , center, initial);
-
-		}
-
-		#pirate-preview {
-			display: none;
-			@include background ($pirate-preview , center, initial);
-
-		}
-
-
-	}
-
+	
 
 
 	/*------------------------------------*\
@@ -1282,8 +1145,10 @@ body {
 	footer {
 		position: relative;
 		background-color: $black ;
-
-		@extend .section;
+		width:100%;
+	 	min-height:270px;
+	 	padding: 50px;
+	 	z-index: 1000;
 		
 
 

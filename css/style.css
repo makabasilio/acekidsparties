@@ -189,7 +189,7 @@
 /*------------------------------------*\
     RESET
 \*------------------------------------*/
-html, body, section, header, footer, div, nav, article, a, ul, body .invitation .row ul li, li, ol, quote, img, h1, h2, h3, h4, h5, h6, a {
+html, body, section, header, footer, div, nav, article, a, ul, li, ol, quote, img, h1, h2, h3, h4, h5, h6, a {
   display: block;
   margin: 0;
   padding: 0; }
@@ -311,9 +311,6 @@ body {
   	    SECTION CONTACTS
   \*------------------------------------*/
   /*------------------------------------*\
-  	    SECTION INVITATION
-  \*------------------------------------*/
-  /*------------------------------------*\
       FOOTER
   \*------------------------------------*/ }
   body .header {
@@ -342,7 +339,7 @@ body {
       body .navbar-nav a:hover, body .navbar-nav a:active {
         color: #F5911E;
         background-color: #FFFFFF; }
-  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
+  body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body .hero-container {
     width: 100%;
     min-height: 670px;
     padding: 50px;
@@ -361,8 +358,6 @@ body {
   body section#bookings {
     position: relative;
     background-color: #F9BD78; }
-  body section#invitation {
-    background-color: #000000; }
   body .aboutus h2 {
     color: #F5911E; }
   body .aboutus p {
@@ -382,8 +377,6 @@ body {
     color: #7B490F; }
   body .contacts h2 {
     color: #FFFFFF; }
-  body .invitation h2 {
-    color: #FAEC21; }
   body .select-heroes {
     position: relative;
     display: block;
@@ -393,56 +386,56 @@ body {
     padding: 4px;
     padding-top: 55px;
     z-index: 13; }
-    body .select-heroes ul .select-box, body .select-heroes .invitation .row ul li .select-box, body .invitation .row ul .select-heroes li .select-box {
+    body .select-heroes ul .select-box {
       display: inline-block;
       width: 70px;
       height: 70px;
       border: 2px solid #000000; }
-      body .select-heroes ul .select-box:hover, body .invitation .row ul .select-heroes li .select-box:hover {
+      body .select-heroes ul .select-box:hover {
         border: 2px solid #FFFFFF; }
-    body .select-heroes ul .box-selected, body .select-heroes .invitation .row ul li .box-selected, body .invitation .row ul .select-heroes li .box-selected {
+    body .select-heroes ul .box-selected {
       border: 2px solid #FFFFFF; }
-    body .select-heroes ul .greenlantern-btn, body .select-heroes .invitation .row ul li .greenlantern-btn, body .invitation .row ul .select-heroes li .greenlantern-btn {
+    body .select-heroes ul .greenlantern-btn {
       background-image: url("../img/superhero-btn_01.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .starwars-btn, body .select-heroes .invitation .row ul li .starwars-btn, body .invitation .row ul .select-heroes li .starwars-btn {
+    body .select-heroes ul .starwars-btn {
       background-image: url("../img/superhero-btn_02.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .flash-btn, body .select-heroes .invitation .row ul li .flash-btn, body .invitation .row ul .select-heroes li .flash-btn {
+    body .select-heroes ul .flash-btn {
       background-image: url("../img/superhero-btn_03.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .batman-btn, body .select-heroes .invitation .row ul li .batman-btn, body .invitation .row ul .select-heroes li .batman-btn {
+    body .select-heroes ul .batman-btn {
       background-image: url("../img/superhero-btn_04.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .captainamerica-btn, body .select-heroes .invitation .row ul li .captainamerica-btn, body .invitation .row ul .select-heroes li .captainamerica-btn {
+    body .select-heroes ul .captainamerica-btn {
       background-image: url("../img/superhero-btn_05.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .spiderman-btn, body .select-heroes .invitation .row ul li .spiderman-btn, body .invitation .row ul .select-heroes li .spiderman-btn {
+    body .select-heroes ul .spiderman-btn {
       background-image: url("../img/superhero-btn_06.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .pirate-btn, body .select-heroes .invitation .row ul li .pirate-btn, body .invitation .row ul .select-heroes li .pirate-btn {
+    body .select-heroes ul .pirate-btn {
       background-image: url("../img/superhero-btn_07.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .superman-btn, body .select-heroes .invitation .row ul li .superman-btn, body .invitation .row ul .select-heroes li .superman-btn {
+    body .select-heroes ul .superman-btn {
       background-image: url("../img/superhero-btn_08.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: initial; }
-    body .select-heroes ul .ninja-btn, body .select-heroes .invitation .row ul li .ninja-btn, body .invitation .row ul .select-heroes li .ninja-btn {
+    body .select-heroes ul .ninja-btn {
       background-image: url("../img/superhero-btn_09.jpg");
       background-repeat: no-repeat;
       background-position: center;
@@ -542,9 +535,9 @@ body {
       margin-left: 25%;
       margin-right: auto;
       padding-top: 70px; }
-      body .hero-container .special-skills ul, body .hero-container .special-skills .invitation .row ul li, body .invitation .row ul .hero-container .special-skills li {
+      body .hero-container .special-skills ul {
         padding-top: 10px; }
-        body .hero-container .special-skills ul li, body .invitation .row ul .hero-container .special-skills li li {
+        body .hero-container .special-skills ul li {
           font-family: "champagne";
           font-size: 20px;
           text-align: center;
@@ -891,96 +884,13 @@ body {
     left: 0px;
     right: 0px;
     z-index: 200; }
-  body .invitation .row {
-    padding-top: 70px; }
-    body .invitation .row table {
-      width: 400px;
-      text-align: right; }
-      body .invitation .row table th {
-        padding-bottom: 30px;
-        font-family: "acmesa";
-        font-size: 18px;
-        text-align: right;
-        color: #F5911E; }
-      body .invitation .row table td {
-        font-family: "acmesa";
-        font-size: 16px;
-        color: #FFFFFF;
-        line-height: 30px; }
-        body .invitation .row table td a {
-          color: #7FCBEC; }
-      body .invitation .row table td:nth-child(2) {
-        color: #94BA87; }
-      body .invitation .row table td:nth-child(3) {
-        padding-right: 25px; }
-    body .invitation .row ul, body .invitation .row ul li {
-      position: relative;
-      width: 90%;
-      height: 300px;
-      padding: 0px;
-      padding-top: 50px;
-      margin: 0px; }
-      body .invitation .row ul li {
-        position: absolute; }
-  body .invitation #preview-btn1, body .invitation #preview-btn2, body .invitation #preview-btn3, body .invitation #preview-btn4, body .invitation #preview-btn5, body .invitation #preview-btn6, body .invitation #preview-btn7, body .invitation #preview-btn8, body .invitation #preview-btn9 {
-    cursor: pointer; }
-  body .invitation #superman-preview {
-    display: block;
-    background-image: url("../img/akp_invitation_superman.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #batman-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_batman.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #spiderman-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_spiderman.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #greenlantern-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_greenlantern.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #flash-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_flash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #captainamerica-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_captainamerica.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #starwars-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_starwars.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #ninja-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_ninja.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
-  body .invitation #pirate-preview {
-    display: none;
-    background-image: url("../img/akp_invitation_pirate.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial; }
   body footer {
     position: relative;
-    background-color: #000000; }
+    background-color: #000000;
+    width: 100%;
+    min-height: 270px;
+    padding: 50px;
+    z-index: 1000; }
     body footer h2 {
       color: #FFFFFF;
       text-align: center; }
@@ -1048,7 +958,7 @@ body {
       width: 100%;
       margin-bottom: 0px;
       margin-top: 20px; }
-    body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body section#invitation, body .hero-container, body footer {
+    body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body .hero-container {
       width: 100%;
       min-height: 480px;
       padding: 15px; }
@@ -1062,60 +972,60 @@ body {
       padding: 0px;
       padding-top: 0px;
       z-index: 13; }
-      body .select-heroes ul, body .select-heroes .invitation .row ul li, body .invitation .row ul .select-heroes li {
+      body .select-heroes ul {
         background-color: #000000; }
-        body .select-heroes ul .select-box, body .select-heroes .invitation .row ul li .select-box, body .invitation .row ul .select-heroes li .select-box {
+        body .select-heroes ul .select-box {
           display: inline-block;
           width: 57px;
           height: 57px;
           margin-right: -3px;
           margin-bottom: -3px;
           border: 1px solid #000000; }
-          body .select-heroes ul .select-box:hover, body .invitation .row ul .select-heroes li .select-box:hover {
+          body .select-heroes ul .select-box:hover {
             border: 1px solid #FFFFFF; }
-        body .select-heroes ul .box-selected, body .select-heroes .invitation .row ul li .box-selected, body .invitation .row ul .select-heroes li .box-selected {
+        body .select-heroes ul .box-selected {
           border: 1px solid #FFFFFF; }
-        body .select-heroes ul .greenlantern-btn, body .select-heroes .invitation .row ul li .greenlantern-btn, body .invitation .row ul .select-heroes li .greenlantern-btn {
+        body .select-heroes ul .greenlantern-btn {
           background-image: url("../img/superhero-btn_01.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .starwars-btn, body .select-heroes .invitation .row ul li .starwars-btn, body .invitation .row ul .select-heroes li .starwars-btn {
+        body .select-heroes ul .starwars-btn {
           background-image: url("../img/superhero-btn_02.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .flash-btn, body .select-heroes .invitation .row ul li .flash-btn, body .invitation .row ul .select-heroes li .flash-btn {
+        body .select-heroes ul .flash-btn {
           background-image: url("../img/superhero-btn_03.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .batman-btn, body .select-heroes .invitation .row ul li .batman-btn, body .invitation .row ul .select-heroes li .batman-btn {
+        body .select-heroes ul .batman-btn {
           background-image: url("../img/superhero-btn_04.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .captainamerica-btn, body .select-heroes .invitation .row ul li .captainamerica-btn, body .invitation .row ul .select-heroes li .captainamerica-btn {
+        body .select-heroes ul .captainamerica-btn {
           background-image: url("../img/superhero-btn_05.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .spiderman-btn, body .select-heroes .invitation .row ul li .spiderman-btn, body .invitation .row ul .select-heroes li .spiderman-btn {
+        body .select-heroes ul .spiderman-btn {
           background-image: url("../img/superhero-btn_06.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .pirate-btn, body .select-heroes .invitation .row ul li .pirate-btn, body .invitation .row ul .select-heroes li .pirate-btn {
+        body .select-heroes ul .pirate-btn {
           background-image: url("../img/superhero-btn_07.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .superman-btn, body .select-heroes .invitation .row ul li .superman-btn, body .invitation .row ul .select-heroes li .superman-btn {
+        body .select-heroes ul .superman-btn {
           background-image: url("../img/superhero-btn_08.jpg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%; }
-        body .select-heroes ul .ninja-btn, body .select-heroes .invitation .row ul li .ninja-btn, body .invitation .row ul .select-heroes li .ninja-btn {
+        body .select-heroes ul .ninja-btn {
           background-image: url("../img/superhero-btn_09.jpg");
           background-repeat: no-repeat;
           background-position: center;
@@ -1203,9 +1113,9 @@ body {
         top: 10px;
         margin-left: 140px;
         padding-top: 70px; }
-        body .hero-container .special-skills ul, body .hero-container .special-skills .invitation .row ul li, body .invitation .row ul .hero-container .special-skills li {
+        body .hero-container .special-skills ul {
           padding-top: 10px; }
-          body .hero-container .special-skills ul li, body .invitation .row ul .hero-container .special-skills li li {
+          body .hero-container .special-skills ul li {
             font-family: "champagne";
             font-size: 16px;
             text-align: center;
