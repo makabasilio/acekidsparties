@@ -530,7 +530,7 @@ body {
 		}
 
 		.flash-body {
-
+			@include background ($flash-body, center bottom, initial);
 
 		}
 
@@ -541,7 +541,7 @@ body {
 		}
 
 		.captainamerica-body {
-
+			@include background ($captainamerica-body, center bottom, initial);
 
 		}
 
@@ -559,7 +559,7 @@ body {
 
 		.superman-body {
 
-			@include background ($superman-body, right bottom, initial);
+			@include background ($superman-body, center bottom, initial);
 
 		}
 

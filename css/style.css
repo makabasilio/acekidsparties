@@ -497,8 +497,18 @@ body {
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: initial; }
+    body .hero-container .flash-body {
+      background-image: url("../img/flash-body.png");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: initial; }
     body .hero-container .batman-body {
       background-image: url("../img/batman-body.png");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: initial; }
+    body .hero-container .captainamerica-body {
+      background-image: url("../img/captainamerica-body.png");
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: initial; }
@@ -515,7 +525,7 @@ body {
     body .hero-container .superman-body {
       background-image: url("../img/superman-body.png");
       background-repeat: no-repeat;
-      background-position: right bottom;
+      background-position: center bottom;
       background-size: initial; }
     body .hero-container .ninja-body {
       background-image: url("../img/ninja-body.png");
