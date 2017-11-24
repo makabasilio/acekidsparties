@@ -991,16 +991,23 @@ body {
 			text-align: justify;
 			overflow-y: scroll;
 
-			
+			input[type=checkbox] {
+  				transform: scale(4);
+  				margin-left: 15px;
+  				text-indent: 45px;
 
-			.accept {
+			}
+
+			span {
 				position: relative;
-				float: right;
-				padding: 9px 16px;
+				left: 30px;
+				font-size: 20px;
+				color: $blue;
+			}
+			.accept {
 				margin-bottom: 15px;
 				font-family: "acmesa";
 				font-size: 21px;
-				color: $white;
 				background-color: $blue;
 			}
 
@@ -1097,6 +1104,7 @@ body {
 
 	#yellow-signal {
 		position: absolute;
+		display: block;
 		width:500px;
 		height:280px;
 		bottom: 90px;
@@ -1105,6 +1113,13 @@ body {
 		z-index: 100;
 
 		@include background ($yellow-signal, center bottom, initial);
+
+		animation-name: signal;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		-webkit-animation-name: signal;
+		-webkit-animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
 
 
 

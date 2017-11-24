@@ -1,41 +1,39 @@
 ﻿<?php
 
 
-$ParentName = $_POST['ParentName'];
+$package = $_POST['package'];
 
-$Phone = $_POST['Phone'];
+$selectYourHero = $_POST['selectYourHero'];
 
-$Email = $_POST['Email'];
+$parentsName = $_POST['parentsName'];
 
-$Day = $_POST['Day'];
+$phone = $_POST['phone'];
 
-$Month = $_POST['Month'];
+$email = $_POST['email'];
 
-$Time = $_POST['Time'];
+$childsName = $_POST['childsName'];
 
-$Hero = $_POST['Hero'];
+$childsAge = $_POST['childsAge'];
 
-$HeroPackage = $_POST['HeroPackage'];
+$day = $_POST['day'];
 
-$Address = $_POST['Address'];
+$month = $_POST['month'];
 
-$PostCode = $_POST['PostCode'];
+$time = $_POST['time'];
 
-$childName = $_POST['childName'];
+$location = $_POST['location'];
 
-$KidAge = $_POST['KidAge'];
+$postcode = $_POST['postcode'];
 
-$HowMany = $_POST['HowMany'];
+$howMany = $_POST['howMany'];
 
-$Message = filter_var($_POST['Message'], FILTER_SANITIZE_STRING);
+$findUs = $_POST['findUs'];
 
-$HowFindUs = $_POST['HowFindUs'];
+$checkbox = $_POST['checkbox'];
 
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-$CheckBox = $_POST['CheckBox'];
-
-
-$Subject = $_POST['HeroPackage'];
+$Subject = $_POST['package'];
 
 
 
@@ -71,11 +69,10 @@ $msg .= "How Many Children: ".($howMany)."\r\n"."<br />";
 
 $msg .= "How Did you find us?: ".($findUs)."\r\n"."<br />";
 
-$msg .= "How Many Kids: ".($HowMany)."\r\n"."<br />";
 
 
-if (isset($_POST['CheckBox'])) {
-    $msg .= "Terms and Conditions: I ".($parentName)." Agreed with Ace Kids Parties terms and conditions.";
+if (isset($_POST['checkbox'])) {
+    $msg .= "Terms and Conditions: I ".($parentsName)." Agreed with Ace Kids Parties terms and conditions."."\r\n"."<br />";
 }
 
 $msg .= "Message: ".($message)."\r\n"."<br />";

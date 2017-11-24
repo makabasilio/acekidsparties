@@ -1,3 +1,17 @@
+@keyframes signal {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes signal {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 /*------------------------------------*\
 	TYPOGRAPHY 
 \*------------------------------------*/
@@ -796,14 +810,19 @@ body {
       font-size: 16px;
       text-align: justify;
       overflow-y: scroll; }
-      body .tooltips article .accept, body .tooltips2 article .accept {
+      body .tooltips article input[type=checkbox], body .tooltips2 article input[type=checkbox] {
+        transform: scale(4);
+        margin-left: 15px;
+        text-indent: 45px; }
+      body .tooltips article span, body .tooltips2 article span {
         position: relative;
-        float: right;
-        padding: 9px 16px;
+        left: 30px;
+        font-size: 20px;
+        color: #0071BA; }
+      body .tooltips article .accept, body .tooltips2 article .accept {
         margin-bottom: 15px;
         font-family: "acmesa";
         font-size: 21px;
-        color: #FFFFFF;
         background-color: #0071BA; }
   body .tooltips2 {
     top: 430px; }
@@ -857,6 +876,7 @@ body {
     position: relative; }
   body #yellow-signal {
     position: absolute;
+    display: block;
     width: 500px;
     height: 280px;
     bottom: 90px;
@@ -866,7 +886,13 @@ body {
     background-image: url("../img/yellow-signal.png");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: initial; }
+    background-size: initial;
+    animation-name: signal;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: signal;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite; }
     body #yellow-signal .text-block {
       position: absolute;
       top: 40px;
