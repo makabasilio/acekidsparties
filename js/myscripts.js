@@ -6,7 +6,7 @@ $(document).ready(function(){
 	    $('body').scrollspy ({target: "#navegation", 
 	    	offset: 200}); 
 
-	/ scroll spy offset /
+	/* scroll spy offset */
 
 	    
 		$('.navbar li a').click(function(event) {
@@ -20,6 +20,35 @@ $(document).ready(function(){
 
 		    
 		}); // scroll spy offset ends
+
+
+	/* nav Mobile  */
+
+
+		$("#menuOpen").click(function(){
+
+			$("#navMobile").animate({marginTop : -57}, 1000);
+ 			
+ 			
+
+		});
+	
+
+		$("#navMobile li a").click(function(event){
+
+			$("#navMobile").animate({marginTop : -560}, 1000);
+
+			
+
+			/* scroll spy offset */
+
+			$("html , body").animate({ 
+				
+		    	scrollTop: $( $.attr(this, "href") ).offset().top - 57 /*offset position */ }, 2000);
+
+		    event.preventDefault();
+		
+		});
 
 		
 
@@ -221,8 +250,11 @@ $(document).ready(function(){
 				$(".tooltips2").fadeIn(200);
 				$(".tooltips2").delay(1200).fadeOut(200 , function () {
 
+					var blue = "#0071BA";
+					var white = "#FFFFFF";
+
 					$(".spiderman-sliding").animate({top: '-600px'} , "slow");
-					$(".terms").css({"background-color" : "green"});
+					$(".termsCond").css({"background-color" : blue , "color" : white});
 
 
 				});					

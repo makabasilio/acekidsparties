@@ -353,6 +353,8 @@ body {
       body .navbar-nav a:hover, body .navbar-nav a:active {
         color: #F5911E;
         background-color: #FFFFFF; }
+  body #navMobile {
+    display: none; }
   body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body .hero-container {
     width: 100%;
     min-height: 670px;
@@ -762,6 +764,12 @@ body {
     -moz-column-gap: 25px;
     /* Firefox */
     column-gap: 25px; }
+  body input[type=checkbox] {
+    position: absolute;
+    bottom: 191px;
+    left: 0px;
+    margin-left: 285px;
+    transform: scale(3); }
   body .spiderman-sliding {
     display: block;
     position: fixed;
@@ -811,6 +819,7 @@ body {
       text-align: justify;
       overflow-y: scroll; }
       body .tooltips article input[type=checkbox], body .tooltips2 article input[type=checkbox] {
+        position: unset;
         transform: scale(4);
         margin-left: 15px;
         text-indent: 45px; }
@@ -936,7 +945,7 @@ body {
 \*------------------------------------*/
 @media screen and (max-width: 480px) {
   body {
-    padding-top: 38px;
+    padding-top: 57px;
     overflow-x: hidden;
     /*------------------------------------*\
         H1 H2 H3 H4 H5 H6
@@ -963,6 +972,7 @@ body {
       font-size: 20px;
       text-align: left;
       padding-right: 5px;
+      padding-left: 15px;
       color: #FFFFFF; }
     body h6 {
       font-family: "guardians";
@@ -984,6 +994,36 @@ body {
       width: 100%;
       margin-bottom: 0px;
       margin-top: 20px; }
+    body #navMobile {
+      display: block;
+      position: fixed;
+      width: 100%;
+      margin-top: -560px;
+      background-color: #63ABDE;
+      border-bottom: 3px solid #FFFFFF;
+      padding-top: 20px;
+      z-index: 2000; }
+      body #navMobile .navbar-brand-mobile {
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto; }
+      body #navMobile ul {
+        text-align: center; }
+        body #navMobile ul li a {
+          font-family: "acmesa";
+          font-size: 1.5em;
+          color: #000000;
+          padding: 17px 30px; }
+          body #navMobile ul li a:hover, body #navMobile ul li a:active {
+            color: #0071BA; }
+        body #navMobile ul div a {
+          font-family: "acmesa";
+          font-size: 1.5em;
+          color: #000000;
+          padding: 17px 30px; }
+          body #navMobile ul div a:hover, body #navMobile ul div a:active {
+            color: #0071BA; }
     body .section, body section#heroes, body section#aboutus, body section#photos, body section#prices, body section#entertainer, body section#bookings, body section#contacts, body .hero-container {
       width: 100%;
       min-height: 480px;
@@ -992,14 +1032,14 @@ body {
       position: absolute;
       display: block;
       bottom: 20px;
-      width: 90%;
+      width: 100%;
       height: 150px;
-      margin-left: 0px;
+      margin-left: -15px;
       padding: 0px;
       padding-top: 0px;
       z-index: 13; }
       body .select-heroes ul {
-        background-color: #000000; }
+        padding-left: 15px; }
         body .select-heroes ul .select-box {
           display: inline-block;
           width: 57px;
@@ -1085,7 +1125,7 @@ body {
     body .blue-font {
       color: #7FCBEC; }
     body .hero-container {
-      position: fixed;
+      position: absolute;
       top: 94px;
       left: 0px;
       width: 100%;
@@ -1093,52 +1133,64 @@ body {
       body .hero-container .hero-body {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 70%;
         left: 0px;
+        top: -95px;
         bottom: 0px;
         margin-left: 0%; }
       body .hero-container .greenlantern-body {
         background-image: url("../img/greenlantern-body.png");
         background-repeat: no-repeat;
-        background-position: left 40px;
-        background-size: 70%; }
+        background-position: left bottom;
+        background-size: 200px; }
       body .hero-container .starwars-body {
         background-image: url("../img/starwars-body.png");
         background-repeat: no-repeat;
-        background-position: left -40px;
-        background-size: 60%; }
+        background-position: left bottom;
+        background-size: 215px; }
+      body .hero-container .flash-body {
+        background-image: url("../img/flash-body.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 195px; }
       body .hero-container .batman-body {
         background-image: url("../img/batman-body.png");
         background-repeat: no-repeat;
-        background-position: 20px 0px;
-        background-size: 40%; }
+        background-position: left bottom;
+        background-size: 150px; }
+      body .hero-container .captainamerica-body {
+        background-image: url("../img/captainamerica-body.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 175px; }
       body .hero-container .spiderman-body {
         background-image: url("../img/spiderman-body.png");
         background-repeat: no-repeat;
-        background-position: left 20px;
-        background-size: 70%; }
+        background-position: left bottom;
+        background-size: 225px; }
       body .hero-container .pirate-body {
         background-image: url("../img/pirate-body.png");
         background-repeat: no-repeat;
-        background-position: 0px 40px;
-        background-size: 75%; }
+        background-position: left bottom;
+        background-size: 270px; }
       body .hero-container .superman-body {
         background-image: url("../img/superman-body.png");
         background-repeat: no-repeat;
-        background-position: left 20px;
-        background-size: 75%; }
+        background-position: left bottom;
+        background-size: 160px; }
       body .hero-container .ninja-body {
         background-image: url("../img/ninja-body.png");
         background-repeat: no-repeat;
-        background-position: 10px 40px;
-        background-size: 75%; }
+        background-position: -15px bottom;
+        background-size: 280px; }
       body .hero-container .special-skills {
         position: absolute;
         width: 160px;
         height: auto;
-        top: 10px;
-        margin-left: 140px;
-        padding-top: 70px; }
+        top: -50px;
+        left: auto;
+        margin-right: 15px;
+        padding-top: 80px; }
         body .hero-container .special-skills ul {
           padding-top: 10px; }
           body .hero-container .special-skills ul li {
@@ -1208,6 +1260,8 @@ body {
           font-family: "agencyr";
           font-size: 20px;
           color: #FFFFFF; }
+    body .prices col {
+      padding-left: 30px; }
     body .aboutus p {
       padding: 0px 0px;
       text-align: justify; }
@@ -1247,6 +1301,8 @@ body {
         column-gap: 0; }
     body .col-12 {
       padding: 0px; }
+    body section#bookings {
+      padding-bottom: 150px; }
     body .terms {
       position: relative;
       display: block;
@@ -1261,6 +1317,12 @@ body {
       bottom: 20px;
       margin-left: 50%;
       margin-right: auto; }
+    body input[type=checkbox] {
+      position: absolute;
+      bottom: 239px;
+      left: 0px;
+      margin-left: 282px;
+      transform: scale(3); }
     body .spiderman-sliding {
       display: block;
       position: fixed;
@@ -1279,8 +1341,8 @@ body {
     body .tooltips, body .tooltips2 {
       display: none;
       position: fixed;
-      top: 50px;
-      left: 1%;
+      top: 200px;
+      left: 5%;
       width: auto;
       height: auto;
       padding: 20px;
@@ -1310,21 +1372,15 @@ body {
         font-size: 16px;
         text-align: justify;
         overflow-y: scroll; }
-        body .tooltips article .accept, body .tooltips2 article .accept {
-          position: relative;
-          float: right;
-          padding: 9px 16px;
-          margin-bottom: 15px;
-          font-family: "acmesa";
-          font-size: 21px;
-          color: #FFFFFF;
-          background-color: #0071BA; }
+        body .tooltips article input[type=checkbox], body .tooltips2 article input[type=checkbox] {
+          margin-left: 20px;
+          margin-top: 20px; }
     body .tooltips2 {
       display: none;
       position: fixed;
       width: 250px;
       height: auto;
-      top: 230px;
+      top: 360px;
       left: 0px;
       right: 0px;
       margin-left: auto;
@@ -1370,7 +1426,10 @@ body {
     body section#invitation {
       display: none; }
     body footer {
-      padding-top: 100px; } }
+      padding: 20px;
+      padding-top: 100px; }
+      body footer h5 {
+        font-size: 14px; } }
 @media screen and (max-width: 800px) {
   body .header .nav-tabs {
     border-bottom: none; }

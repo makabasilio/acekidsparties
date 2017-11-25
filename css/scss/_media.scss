@@ -8,7 +8,7 @@
 @media screen and (max-width:480px) {
 	
 	body{
-		padding-top: 38px;
+		padding-top: 57px;
 		overflow-x: hidden;
 
 
@@ -50,6 +50,7 @@
 			font-size: 20px;
 			text-align: left;
 			padding-right: 5px;
+			padding-left: 15px;
 			color: $white;
 		}
 
@@ -89,6 +90,64 @@
 
 		}
 
+		#navMobile {
+			display:block;
+			position: fixed;
+			width:100%;
+			margin-top: -560px;
+			background-color: $bluesky ;
+			border-bottom: 3px solid $white;
+			padding-top: 20px;
+			z-index: 2000;
+
+
+			.navbar-brand-mobile {
+				left: 0px;
+				right:0px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			ul {
+
+				text-align: center;
+
+				li {
+
+					a {
+						font-family: "acmesa";
+						font-size: 1.5em;
+						color: $black;
+						padding: 17px 30px;
+
+
+						&:hover, &:active {
+						color: $blue;
+						
+						}
+					}
+
+				}
+
+				div {
+
+					a {
+						font-family: "acmesa";
+						font-size: 1.5em;
+						color: $black;
+						padding: 17px 30px;
+
+
+							&:hover, &:active {
+							color: $blue;
+							
+							}
+					}
+				}
+
+			}
+			
+		}
 
 		.section {
 			width:100%;
@@ -106,9 +165,9 @@
 		position: absolute;
 		display: block;
 		bottom: 20px;
-		width: 90%;
+		width: 100%;
 		height: 150px;
-		margin-left: 0px;
+		margin-left: -15px;
 		padding: 0px;
 		padding-top: 0px;
 		z-index: 13;
@@ -120,8 +179,7 @@
 		
 
 		ul {
-			background-color: $black;
-
+			padding-left: 15px;
 
 
 			.select-box {
@@ -263,7 +321,7 @@
 
 	
 	.hero-container {
-		position: fixed;
+		position: absolute;
 		top: 94px;
 		left: 0px;
 		width: 100%;
@@ -275,8 +333,9 @@
 		.hero-body {
 			position: absolute;
 			width: 100%;
-			height: 100%;
+			height: 70%;
 			left: 0px;
+			top: -95px;
 			bottom: 0px;
 			margin-left: 0%;
 
@@ -284,51 +343,50 @@
 
 		.greenlantern-body {
 
-			@include background ($greenlantern-body, left 40px, 70%);
+			@include background ($greenlantern-body, left bottom, 200px);
 		}
 		
 		.starwars-body {
 
-			@include background ($starwars-body, left -40px, 60%);
+			@include background ($starwars-body, left bottom, 215px);
 		}
 
 		.flash-body {
-
+			@include background ($flash-body, left bottom, 195px);
 
 		}
 
 		.batman-body {
-
-			@include background ($batman-body, 20px 0px, 40%);
+			@include background ($batman-body, left bottom, 150px);
 
 		}
 
 		.captainamerica-body {
-
+			@include background ($captainamerica-body, left bottom, 175px);
 
 		}
 
 		.spiderman-body {
 
-			@include background ($spiderman-body, left 20px, 70%);
+			@include background ($spiderman-body, left bottom, 225px);
 
 		}
 
 		.pirate-body {
 
-			@include background ($pirate-body, 0px 40px, 75%);
+			@include background ($pirate-body, left bottom, 270px);
 
 		}
 
 		.superman-body {
 
-			@include background ($superman-body, left 20px, 75%);
+			@include background ($superman-body, left bottom, 160px);
 
 		}
 
 		.ninja-body {
 
-			@include background ($ninja-body, 10px 40px, 75%);
+			@include background ($ninja-body, -15px bottom, 280px);
 
 		}
 
@@ -339,9 +397,10 @@
 			position: absolute;
 			width: 160px;
 			height: auto;
-			top: 10px;
-			margin-left: 140px;
-			padding-top: 70px;
+			top: -50px;
+			left: auto;
+			margin-right: 15px;
+			padding-top: 80px;
 
 
 			
@@ -443,6 +502,22 @@
 	}
 	
 
+
+
+	//	SECTION PRICES
+	
+
+	.prices {
+
+
+		 col {
+			padding-left: 30px;
+
+		 }
+		
+
+	}
+
 	
 	 //	SECTION ABOUT US
 	
@@ -519,6 +594,10 @@
 
 	// SECTION BOOKINGS
 
+		section#bookings {
+			padding-bottom: 150px;
+		}
+
 		.terms {
 			position: relative;
 			display: block;
@@ -536,6 +615,15 @@
 			margin-left: 50%;
 			margin-right: auto;
 			
+		}
+
+		input[type=checkbox] {  		
+			position: absolute;
+			bottom: 239px;
+			left: 0px;
+			margin-left: 282px;
+	  		transform: scale(3);
+
 		}
 
 		.spiderman-sliding {
@@ -556,8 +644,8 @@
 		.tooltips {
 			display:none;
 			position: fixed;
-			top: 50px;
-	  		left: 1%; 
+			top: 200px;
+	  		left: 5%; 
 			width: auto;
 			height: auto;
 			padding: 20px;
@@ -588,18 +676,12 @@
 				text-align: justify;
 				overflow-y: scroll;
 
-				
+				input[type=checkbox] {
+	  				margin-left: 20px;
+	  				margin-top: 20px;
+	  			}	
 
-				.accept {
-					position: relative;
-					float: right;
-					padding: 9px 16px;
-					margin-bottom: 15px;
-					font-family: "acmesa";
-					font-size: 21px;
-					color: $white;
-					background-color: $blue;
-				}
+				
 			}
 		}
 
@@ -609,7 +691,7 @@
 			position: fixed;
 			width: 250px;
 			height: auto;
-			top: 230px;
+			top: 360px;
 	  		left: 0px;
 	  		right: 0px;
 	  		margin-left: auto;
@@ -677,7 +759,13 @@
 	//	SECTION FOOTER
 
 		footer {
+			padding: 20px;
 			padding-top: 100px;
+
+			h5 {
+				font-size: 14px;
+
+			}
 		}
 
 

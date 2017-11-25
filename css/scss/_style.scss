@@ -197,6 +197,11 @@ body {
 	}
 
 
+	#navMobile {
+		display:none;
+	}
+
+
 /*------------------------------------*\
     Sections
 \*------------------------------------*/
@@ -940,6 +945,14 @@ body {
 		    SECTION BOOKINGS
 	\*------------------------------------*/
 
+	input[type=checkbox] {  		
+		position: absolute;
+		bottom: 191px;
+		left: 0px;
+		margin-left: 285px;
+  		transform: scale(3);
+
+	}
 
 
 	.spiderman-sliding {
@@ -992,6 +1005,7 @@ body {
 			overflow-y: scroll;
 
 			input[type=checkbox] {
+				position: unset;
   				transform: scale(4);
   				margin-left: 15px;
   				text-indent: 45px;
@@ -1036,6 +1050,8 @@ body {
 
 		border: none;
 	}
+
+
 
 	.form-input {
 		width: 300px;

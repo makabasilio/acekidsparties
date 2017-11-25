@@ -52,6 +52,27 @@
     
     </nav> <!-- Navegation ends -->
 
+
+    <nav  id="navMobile" class=""> <!-- Navegation -->
+      
+        <img class="navbar-brand-mobile" src="img/akp-logo.png">
+
+        <ul id="navegationMobile">
+          
+          <li class="nav-item"> <a class="nav-link" href="#heroes">Heroes</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#aboutus">About us</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#photos">Photos</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#prices">Prices</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#entertainer">Entertainer</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#bookings">Bookings</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#contacts">Contacts</a> </li>
+          <div id="menuOpen"> <a>==   Menu   ==</a> </div>
+              
+        
+        </ul>
+    
+    </nav> <!-- Navegation ends -->
+
   
 
 
@@ -1026,12 +1047,11 @@ etc etc.. </p>
 
           <label class="form-input-label sr-only">Terms and conditions</label>
           
-          <div class="form-input">
+          <div class="form-input termsCond">
 
             Terms and conditions
 
-            <div id="terms" class="btn terms" required="required">read it</div>
-
+            <input id="terms" type="checkbox" name="checkbox" value="" class="terms" required="required">
           </div>
           
           
@@ -1116,7 +1136,7 @@ etc etc.. </p>
 
         <p>The contents of this web site are subject to and protected by: Copyright © 2015 Ace Kids Parties ALL RIGHTS RESERVED. All other trademarks, company names, logos or product names that are used within this Web site are the property of their respective owners.</p>
 
-        <input type="checkbox" name="checkbox" value="" class="accept"><span><<< I agree</span>
+        <input id="checkbox" type="checkbox" name="checkbox" value="" class="accept"><span><<< I agree</span>
 
       </article>  
 
@@ -1141,7 +1161,7 @@ etc etc.. </p>
           
           <textarea id="message" rows="4" cols="50" placeholder="Anymore detail?" name="message"></textarea>
 
-          <input type="submit" value="send" class="btn send"></input>
+          <input id="send" type="submit" value="send" class="btn send"></input>
 
 
         </form><!-- form ends -->
