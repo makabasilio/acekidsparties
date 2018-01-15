@@ -726,7 +726,8 @@ body {
 
 			.front,
 			.back {
-			  backface-visibility: hidden;
+			  backface-visibility: hidden;			  	-webkit-backface-visibility: hidden;
+
 			  position: absolute;
 			  top: 0;
 			  left: 0;
@@ -1161,6 +1162,8 @@ body {
 		bottom: 0px;
 		left: 0px;
 		right: 0px;
+		margin-left: auto;
+		margin-right: auto;
 		z-index: 200;
 	}
 
@@ -1175,9 +1178,9 @@ body {
 
 	footer {
 		position: relative;
-		background-color: $black ;
+		background-color: $black;
 		width:100%;
-	 	min-height:270px;
+	 	min-height:290px;
 	 	padding: 50px;
 	 	z-index: 1000;
 		
